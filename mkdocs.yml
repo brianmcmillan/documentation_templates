@@ -1,0 +1,61 @@
+site_name: Data Product Documentation
+site_url: ""
+use_directory_urls: false
+theme: 
+  name: material
+  palette: 
+    - scheme: default
+      primary: deep orange
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch 
+        name: Switch to dark mode
+    - scheme: slate 
+      primary: deep purple
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  features:
+    - navigation.tabs.sticky
+    - navigation.indexes
+  icon:
+    logo: material/map 
+plugins:
+  - search:
+      lang: en  
+  - charts:
+      vega_theme: default
+      vega_renderer: "canvas"
+  - table-reader    
+markdown_extensions:
+  - meta
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+     base_path: 'docs/'
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: true  
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: vegalite
+          class: vegalite
+          vega_theme: dark
+          format: !!python/name:mkdocs_charts_plugin.fences.fence_vegalite
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js          
+  - https://cdn.jsdelivr.net/npm/vega@5
+  - https://cdn.jsdelivr.net/npm/vega-lite@5
+  - https://cdn.jsdelivr.net/npm/vega-embed@6
+  

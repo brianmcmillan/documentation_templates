@@ -1,0 +1,216 @@
+.
+├── docs
+│   ├── analysis
+│   │   ├── example
+│   │   │   ├── analysis.md
+│   │   │   └── data
+│   │   │       ├── bigmac.csv
+│   │   │       └── bigmac.txt
+│   │   └── index.md
+│   ├── configuration_management
+│   │   ├── application.md
+│   │   ├── data_pipeline.md
+│   │   ├── database.md
+│   │   ├── files
+│   │   │   ├── business_tables.pdf
+│   │   │   ├── business_tables.png
+│   │   │   ├── crontab.txt
+│   │   │   ├── directory_listing.txt
+│   │   │   ├── information_tables.pdf
+│   │   │   ├── information_tables.png
+│   │   │   ├── makefile_graph.png
+│   │   │   ├── meta_tables.pdf
+│   │   │   ├── metadata.yaml
+│   │   │   ├── pip.json
+│   │   │   ├── pip_dependencies.png
+│   │   │   ├── pipdeptree.txt
+│   │   │   ├── raw_tables.pdf
+│   │   │   ├── requirements.txt
+│   │   │   ├── requirements_base.txt
+│   │   │   └── settings.json
+│   │   ├── files_and_directories.md
+│   │   └── software_bom.md
+│   ├── documentation
+│   │   ├── FAQ.md
+│   │   ├── background
+│   │   │   ├── background_topic.md
+│   │   │   └── index.md
+│   │   ├── how_to
+│   │   │   ├── howto_task.md
+│   │   │   └── index.md
+│   │   ├── index.md
+│   │   ├── reference
+│   │   │   ├── index.md
+│   │   │   └── reference_subject.md
+│   │   └── tutorial
+│   │       ├── index.md
+│   │       └── tutorial_prerequsites.md
+│   ├── index.md
+│   ├── javascripts
+│   │   └── tablesort.js
+│   └── project_management
+│       ├── 1_Opportunities
+│       │   ├── ADR-###_decision.md
+│       │   ├── FRD-###_feature.md
+│       │   ├── PRD-###_problem.md
+│       │   └── RFC-###_comments.md
+│       ├── 2_Delivery
+│       │   ├── AUTHORS.md
+│       │   ├── CHANGELOG.md
+│       │   ├── DPC-###_data-product-context.md
+│       │   ├── LICENSE.md
+│       │   ├── NEWS.md
+│       │   ├── README.md
+│       │   └── todo-project.md
+│       ├── 3_Release
+│       │   ├── DP-###_data_product.md
+│       │   └── RB-###_run_book.md
+│       └── index.md
+├── index.md
+├── mkdocs.yml
+├── notes.txt
+└── site
+    ├── 404 2.html
+    ├── 404.html
+    ├── analysis
+    │   ├── example
+    │   │   ├── analysis
+    │   │   │   └── index.html
+    │   │   └── data
+    │   │       ├── bigmac.csv
+    │   │       └── bigmac.txt
+    │   └── index.html
+    ├── assets
+    │   ├── images
+    │   │   └── favicon.png
+    │   ├── javascripts
+    │   │   ├── bundle.c2e1ee47.min.js
+    │   │   ├── bundle.c2e1ee47.min.js.map
+    │   │   ├── lunr
+    │   │   │   ├── min
+    │   │   │   │   ├── lunr.ar.min.js
+    │   │   │   │   ├── lunr.da.min.js
+    │   │   │   │   ├── lunr.de.min.js
+    │   │   │   │   ├── lunr.du.min.js
+    │   │   │   │   ├── lunr.es.min.js
+    │   │   │   │   ├── lunr.fi.min.js
+    │   │   │   │   ├── lunr.fr.min.js
+    │   │   │   │   ├── lunr.hi.min.js
+    │   │   │   │   ├── lunr.hu.min.js
+    │   │   │   │   ├── lunr.it.min.js
+    │   │   │   │   ├── lunr.ja.min.js
+    │   │   │   │   ├── lunr.jp.min.js
+    │   │   │   │   ├── lunr.multi.min.js
+    │   │   │   │   ├── lunr.nl.min.js
+    │   │   │   │   ├── lunr.no.min.js
+    │   │   │   │   ├── lunr.pt.min.js
+    │   │   │   │   ├── lunr.ro.min.js
+    │   │   │   │   ├── lunr.ru.min.js
+    │   │   │   │   ├── lunr.stemmer.support.min.js
+    │   │   │   │   ├── lunr.sv.min.js
+    │   │   │   │   ├── lunr.th.min.js
+    │   │   │   │   ├── lunr.tr.min.js
+    │   │   │   │   ├── lunr.vi.min.js
+    │   │   │   │   └── lunr.zh.min.js
+    │   │   │   ├── tinyseg.js
+    │   │   │   └── wordcut.js
+    │   │   └── workers
+    │   │       ├── search.2a1c317c.min.js
+    │   │       └── search.2a1c317c.min.js.map
+    │   └── stylesheets
+    │       ├── main.3de6f41f.min.css
+    │       ├── main.3de6f41f.min.css.map
+    │       ├── palette.cc9b2e1e.min.css
+    │       └── palette.cc9b2e1e.min.css.map
+    ├── configuration_management
+    │   ├── application
+    │   │   └── index.html
+    │   ├── data_pipeline
+    │   │   └── index.html
+    │   ├── database
+    │   │   └── index.html
+    │   ├── files
+    │   │   ├── business_tables.pdf
+    │   │   ├── business_tables.png
+    │   │   ├── crontab.txt
+    │   │   ├── directory_listing.txt
+    │   │   ├── information_tables.pdf
+    │   │   ├── information_tables.png
+    │   │   ├── makefile_graph.png
+    │   │   ├── meta_tables.pdf
+    │   │   ├── metadata.yaml
+    │   │   ├── pip.json
+    │   │   ├── pip_dependencies.png
+    │   │   ├── pipdeptree.txt
+    │   │   ├── raw_tables.pdf
+    │   │   ├── requirements.txt
+    │   │   ├── requirements_base.txt
+    │   │   └── settings.json
+    │   ├── files_and_directories
+    │   │   └── index.html
+    │   └── software_bom
+    │       └── index.html
+    ├── documentation
+    │   ├── FAQ
+    │   │   └── index.html
+    │   ├── background
+    │   │   ├── background_topic
+    │   │   │   └── index.html
+    │   │   └── index.html
+    │   ├── how_to
+    │   │   ├── howto_task
+    │   │   │   └── index.html
+    │   │   └── index.html
+    │   ├── index.html
+    │   ├── reference
+    │   │   ├── index.html
+    │   │   └── reference_subject
+    │   │       └── index.html
+    │   └── tutorial
+    │       ├── index.html
+    │       └── tutorial_prerequsites
+    │           └── index.html
+    ├── index.html
+    ├── javascripts
+    │   └── tablesort.js
+    ├── js
+    │   └── mkdocs-charts-plugin.js
+    ├── project_management
+    │   ├── 1_Opportunities
+    │   │   ├── ADR-###_decision
+    │   │   │   └── index.html
+    │   │   ├── FRD-###_feature
+    │   │   │   └── index.html
+    │   │   ├── PRD-###_problem
+    │   │   │   └── index.html
+    │   │   └── RFC-###_comments
+    │   │       └── index.html
+    │   ├── 2_Delivery
+    │   │   ├── AUTHORS
+    │   │   │   └── index.html
+    │   │   ├── CHANGELOG
+    │   │   │   └── index.html
+    │   │   ├── DPC-###_data-product-context
+    │   │   │   └── index.html
+    │   │   ├── LICENSE
+    │   │   │   └── index.html
+    │   │   ├── NEWS
+    │   │   │   └── index.html
+    │   │   ├── index.html
+    │   │   └── todo-project
+    │   │       └── index.html
+    │   ├── 3_Release
+    │   │   ├── DP-###_data_product
+    │   │   │   └── index.html
+    │   │   └── RB-###_run_book
+    │   │       └── index.html
+    │   └── index.html
+    ├── search
+    │   ├── search_index 3.json
+    │   └── search_index.json
+    ├── sitemap 2.xml
+    ├── sitemap 2.xml.gz
+    ├── sitemap.xml
+    └── sitemap.xml.gz
+
+64 directories, 149 files

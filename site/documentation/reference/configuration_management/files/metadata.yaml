@@ -1,0 +1,66 @@
+title: Sales Data Discovery Platform
+license: CC Attribution 4.0 License
+license_url: http://creativecommons.org/licenses/by/4.0/
+source: Building Data Products / UCI Machine Learning Repository
+source_url: https://archive.ics.uci.edu/ml/datasets/Online+Retail+II/
+databases:
+  sales:
+    source: Manual extract - online_retail_II.xlsx-Year_2010-2011
+    description_html: |-
+       <strong>Description:</strong> Invoice data provided from a report.<br>
+       <strong>Source:</strong> Manual extract<br>
+       <strong>File:</strong> online_retail_II.xlsx-Year_2010-2011<br>
+       <p></p>
+       <a href = "mailto: sales.manager@example.com">Business Contact</a><br>
+       <a href = "mailto: data.sales@example.com">Technical Contact</a>
+       <p></p>
+       <strong>Reports:</strong><br>
+        <a href="/static/WEEKLY_TOP_SALES_RANK_004.html" target="_blank">Weekly Top Sales Rank</a><br>
+       <p></p>
+    tables:
+      INFO_WEEKLY_TOP_SALES_RANK_002:
+        description_html: |-
+         <strong>Description:</strong> Sales revenue for the top 10 products in each week of the previous 6 months.<br>
+         <strong>Source:</strong> Database table<br>
+         <strong>Source table(s):</strong> INFO_WEEKLY_TOP_SALES_RANK_002
+         <p></p>
+         <strong>Reports:</strong><br>
+         <a href="/static/WEEKLY_TOP_SALES_RANK_004.html" target="_blank">Weekly Top Sales Rank</a><br>
+         <p></p>
+        columns:
+            row_id: "Internal row ID of the record in the database." 
+            end_of_week_ssmtwtf: "End of the week date for a business week starting on Saturday and ending on Friday." 
+            rank: "Rank position for the total revenue for the business week. Only top 10 for each week shown." 
+            stock_code: "Stock Code for the product." 
+            preferred_description: "The preferred description for the product." 
+            quantity: "Quantuty of product sold."
+            avg_price: "Average price of the product sold. Normalizes Retail vs. Wholesale at this point."
+            total_sales_revenue: "Quantity sold multiplied by average price."
+    queries:
+      preferred_stock_code_description:
+        sql:  |-
+          SELECT
+            A.stock_code,
+            COALESCE(B.preferred_description,A.stock_code) AS preferred_description
+          FROM BHUB_STOCK_CODES_001 A
+            LEFT OUTER JOIN BLNK_STOCK_CODE_PREFERRED_DESCRIPTION_001 B
+            ON (A.stock_code_hkey = B.stock_code_hkey)
+          ORDER BY
+            A.stock_code DESC
+        title: Preferred stock code description.
+        description_html: |-
+          <p>Cleaned up product descriptions for each stock code (SKU).</p>    
+      stock_code_description_cleanup:
+        sql:  |-
+          SELECT
+            A.stock_code,
+            COALESCE(B.preferred_description,A.stock_code) AS preferred_description
+          FROM BHUB_STOCK_CODES_001 A
+            LEFT OUTER JOIN BLNK_STOCK_CODE_PREFERRED_DESCRIPTION_001 B
+            ON (A.stock_code_hkey = B.stock_code_hkey)
+          WHERE B.preferred_description IS NULL  
+          ORDER BY
+            A.stock_code DESC
+        title: Stock code description cleanup.
+        description_html: |-
+          <p>Stock codes without a useful product description.</p>            

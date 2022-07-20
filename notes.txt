@@ -1,0 +1,101 @@
+MkDocs setup notes
+
+softwareupdate --all --install --force
+
+brew update
+brew upgrade
+
+pyenv virtualenv 3.10.2 documentation_templates
+pyenv local documentation_templates
+cd ..
+cd documentation_templates
+
+pyenv which python --> ~/.pyenv/versions/documentation_templates/bin/python
+
+pyenv which pip --> ~/.pyenv/versions/documentation_templates/bin/pip
+
+~/.pyenv/versions/documentation_templates/bin/pip install --upgrade pip
+
+~/.pyenv/versions/documentation_templates/bin/pip install mkdocs mkdocs-material mkdocs-material-extensions \
+mkdocs-charts-plugin mkdocs-table-reader-plugin pipdeptree graphviz csvkit
+
+requirements_base:
+mkdocs>=1.3.0
+mkdocs-material>=8.2.14
+mkdocs-charts-plugin>=0.0.8
+mkdocs-material-extensions>=1.0.3
+mkdocs-table-reader-plugin>=1.0.0
+pipdeptree>=2.2.1
+graphviz>=0.20
+csvkit>=1.0.7
+
+
+~/.pyenv/versions/documentation_templates/bin/pip list --outdated
+
+~/.pyenv/versions/documentation_templates/bin/pip freeze
+
+
+~/.pyenv/versions/documentation_templates/bin/pip freeze > requirements.txt
+
+
+
+~/.pyenv/versions/documentation_templates/bin/pip list --outdated
+
+
+~/.pyenv/versions/documentation_templates/bin/pip install -r requirements_base.txt --upgrade
+
+
+
+----
+
+~/.pyenv/versions/documentation_templates/bin/pip install mkdocs
+
+~/.pyenv/versions/documentation_templates/bin/mkdocs new ../documentation_templates
+
+----
+
+~/.pyenv/versions/documentation_templates/bin/mkdocs serve
+
+[CTRL]+C to shut down
+
+~/.pyenv/versions/documentation_templates/bin/mkdocs build
+
+----
+
+~/.pyenv/versions/documentation_templates/bin/pip install mkdocs-material
+
+
+
+----
+~/.pyenv/versions/documentation_templates/bin/pip install pipdeptree
+
+~/.pyenv/versions/documentation_templates/bin/pip install graphviz
+
+~/.pyenv/versions/documentation_templates/bin/pip freeze > docs/configuration_management/requirements.txt
+
+~/.pyenv/versions/documentation_templates/bin/pipdeptree > docs/configuration_management/pip.txt
+
+~/.pyenv/versions/documentation_templates/bin/pipdeptree --json-tree > docs/configuration_management/pip.json
+
+~/.pyenv/versions/documentation_templates/bin/pipdeptree --graph-output png > docs/configuration_management/pip_dependencies.png
+
+----
+https://www.timvink.nl/reproducible-reports-with-mkdocs/
+https://timvink.github.io/mkdocs-charts-plugin/
+
+
+~/.pyenv/versions/documentation_templates/bin/pip install mkdocs-charts-plugin
+
+
+~/.pyenv/versions/documentation_templates/bin/pip install mkdocs-table-reader-plugin
+
+~/.pyenv/versions/documentation_templates/bin/pip install csvkit
+
+csvstat docs/tables/bigmac.csv > docs/tables/bigmac.txt
+
+
+----
+
+tree > docs/configuration_management/files/directory_listing.txt
+
+

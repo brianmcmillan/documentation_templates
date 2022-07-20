@@ -1,0 +1,1035 @@
+[
+    {
+        "key": "csvkit",
+        "package_name": "csvkit",
+        "installed_version": "1.0.7",
+        "required_version": "1.0.7",
+        "dependencies": [
+            {
+                "key": "agate",
+                "package_name": "agate",
+                "installed_version": "1.6.3",
+                "required_version": ">=1.6.1",
+                "dependencies": [
+                    {
+                        "key": "babel",
+                        "package_name": "Babel",
+                        "installed_version": "2.10.1",
+                        "required_version": ">=2.0",
+                        "dependencies": [
+                            {
+                                "key": "pytz",
+                                "package_name": "pytz",
+                                "installed_version": "2022.1",
+                                "required_version": ">=2015.7",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "isodate",
+                        "package_name": "isodate",
+                        "installed_version": "0.6.1",
+                        "required_version": ">=0.5.4",
+                        "dependencies": [
+                            {
+                                "key": "six",
+                                "package_name": "six",
+                                "installed_version": "1.16.0",
+                                "required_version": "Any",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "leather",
+                        "package_name": "leather",
+                        "installed_version": "0.3.4",
+                        "required_version": ">=0.3.2",
+                        "dependencies": [
+                            {
+                                "key": "six",
+                                "package_name": "six",
+                                "installed_version": "1.16.0",
+                                "required_version": ">=1.6.1",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "parsedatetime",
+                        "package_name": "parsedatetime",
+                        "installed_version": "2.4",
+                        "required_version": ">=2.1,!=2.6,!=2.5",
+                        "dependencies": [
+                            {
+                                "key": "future",
+                                "package_name": "future",
+                                "installed_version": "0.18.2",
+                                "required_version": "Any",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "python-slugify",
+                        "package_name": "python-slugify",
+                        "installed_version": "6.1.2",
+                        "required_version": ">=1.2.1",
+                        "dependencies": [
+                            {
+                                "key": "text-unidecode",
+                                "package_name": "text-unidecode",
+                                "installed_version": "1.3",
+                                "required_version": ">=1.3",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "pytimeparse",
+                        "package_name": "pytimeparse",
+                        "installed_version": "1.1.8",
+                        "required_version": ">=1.1.5",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "six",
+                        "package_name": "six",
+                        "installed_version": "1.16.0",
+                        "required_version": ">=1.9.0",
+                        "dependencies": []
+                    }
+                ]
+            },
+            {
+                "key": "agate-dbf",
+                "package_name": "agate-dbf",
+                "installed_version": "0.2.2",
+                "required_version": ">=0.2.2",
+                "dependencies": [
+                    {
+                        "key": "agate",
+                        "package_name": "agate",
+                        "installed_version": "1.6.3",
+                        "required_version": ">=1.5.0",
+                        "dependencies": [
+                            {
+                                "key": "babel",
+                                "package_name": "Babel",
+                                "installed_version": "2.10.1",
+                                "required_version": ">=2.0",
+                                "dependencies": [
+                                    {
+                                        "key": "pytz",
+                                        "package_name": "pytz",
+                                        "installed_version": "2022.1",
+                                        "required_version": ">=2015.7",
+                                        "dependencies": []
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "isodate",
+                                "package_name": "isodate",
+                                "installed_version": "0.6.1",
+                                "required_version": ">=0.5.4",
+                                "dependencies": [
+                                    {
+                                        "key": "six",
+                                        "package_name": "six",
+                                        "installed_version": "1.16.0",
+                                        "required_version": "Any",
+                                        "dependencies": []
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "leather",
+                                "package_name": "leather",
+                                "installed_version": "0.3.4",
+                                "required_version": ">=0.3.2",
+                                "dependencies": [
+                                    {
+                                        "key": "six",
+                                        "package_name": "six",
+                                        "installed_version": "1.16.0",
+                                        "required_version": ">=1.6.1",
+                                        "dependencies": []
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "parsedatetime",
+                                "package_name": "parsedatetime",
+                                "installed_version": "2.4",
+                                "required_version": ">=2.1,!=2.6,!=2.5",
+                                "dependencies": [
+                                    {
+                                        "key": "future",
+                                        "package_name": "future",
+                                        "installed_version": "0.18.2",
+                                        "required_version": "Any",
+                                        "dependencies": []
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "python-slugify",
+                                "package_name": "python-slugify",
+                                "installed_version": "6.1.2",
+                                "required_version": ">=1.2.1",
+                                "dependencies": [
+                                    {
+                                        "key": "text-unidecode",
+                                        "package_name": "text-unidecode",
+                                        "installed_version": "1.3",
+                                        "required_version": ">=1.3",
+                                        "dependencies": []
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "pytimeparse",
+                                "package_name": "pytimeparse",
+                                "installed_version": "1.1.8",
+                                "required_version": ">=1.1.5",
+                                "dependencies": []
+                            },
+                            {
+                                "key": "six",
+                                "package_name": "six",
+                                "installed_version": "1.16.0",
+                                "required_version": ">=1.9.0",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "dbfread",
+                        "package_name": "dbfread",
+                        "installed_version": "2.0.7",
+                        "required_version": ">=2.0.5",
+                        "dependencies": []
+                    }
+                ]
+            },
+            {
+                "key": "agate-excel",
+                "package_name": "agate-excel",
+                "installed_version": "0.2.5",
+                "required_version": ">=0.2.2",
+                "dependencies": [
+                    {
+                        "key": "agate",
+                        "package_name": "agate",
+                        "installed_version": "1.6.3",
+                        "required_version": ">=1.5.0",
+                        "dependencies": [
+                            {
+                                "key": "babel",
+                                "package_name": "Babel",
+                                "installed_version": "2.10.1",
+                                "required_version": ">=2.0",
+                                "dependencies": [
+                                    {
+                                        "key": "pytz",
+                                        "package_name": "pytz",
+                                        "installed_version": "2022.1",
+                                        "required_version": ">=2015.7",
+                                        "dependencies": []
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "isodate",
+                                "package_name": "isodate",
+                                "installed_version": "0.6.1",
+                                "required_version": ">=0.5.4",
+                                "dependencies": [
+                                    {
+                                        "key": "six",
+                                        "package_name": "six",
+                                        "installed_version": "1.16.0",
+                                        "required_version": "Any",
+                                        "dependencies": []
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "leather",
+                                "package_name": "leather",
+                                "installed_version": "0.3.4",
+                                "required_version": ">=0.3.2",
+                                "dependencies": [
+                                    {
+                                        "key": "six",
+                                        "package_name": "six",
+                                        "installed_version": "1.16.0",
+                                        "required_version": ">=1.6.1",
+                                        "dependencies": []
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "parsedatetime",
+                                "package_name": "parsedatetime",
+                                "installed_version": "2.4",
+                                "required_version": ">=2.1,!=2.6,!=2.5",
+                                "dependencies": [
+                                    {
+                                        "key": "future",
+                                        "package_name": "future",
+                                        "installed_version": "0.18.2",
+                                        "required_version": "Any",
+                                        "dependencies": []
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "python-slugify",
+                                "package_name": "python-slugify",
+                                "installed_version": "6.1.2",
+                                "required_version": ">=1.2.1",
+                                "dependencies": [
+                                    {
+                                        "key": "text-unidecode",
+                                        "package_name": "text-unidecode",
+                                        "installed_version": "1.3",
+                                        "required_version": ">=1.3",
+                                        "dependencies": []
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "pytimeparse",
+                                "package_name": "pytimeparse",
+                                "installed_version": "1.1.8",
+                                "required_version": ">=1.1.5",
+                                "dependencies": []
+                            },
+                            {
+                                "key": "six",
+                                "package_name": "six",
+                                "installed_version": "1.16.0",
+                                "required_version": ">=1.9.0",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "olefile",
+                        "package_name": "olefile",
+                        "installed_version": "0.46",
+                        "required_version": "Any",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "openpyxl",
+                        "package_name": "openpyxl",
+                        "installed_version": "3.0.9",
+                        "required_version": ">=2.3.0",
+                        "dependencies": [
+                            {
+                                "key": "et-xmlfile",
+                                "package_name": "et-xmlfile",
+                                "installed_version": "1.1.0",
+                                "required_version": "Any",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "six",
+                        "package_name": "six",
+                        "installed_version": "1.16.0",
+                        "required_version": "Any",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "xlrd",
+                        "package_name": "xlrd",
+                        "installed_version": "2.0.1",
+                        "required_version": ">=0.9.4",
+                        "dependencies": []
+                    }
+                ]
+            },
+            {
+                "key": "agate-sql",
+                "package_name": "agate-sql",
+                "installed_version": "0.5.8",
+                "required_version": ">=0.5.3",
+                "dependencies": [
+                    {
+                        "key": "agate",
+                        "package_name": "agate",
+                        "installed_version": "1.6.3",
+                        "required_version": ">=1.5.0",
+                        "dependencies": [
+                            {
+                                "key": "babel",
+                                "package_name": "Babel",
+                                "installed_version": "2.10.1",
+                                "required_version": ">=2.0",
+                                "dependencies": [
+                                    {
+                                        "key": "pytz",
+                                        "package_name": "pytz",
+                                        "installed_version": "2022.1",
+                                        "required_version": ">=2015.7",
+                                        "dependencies": []
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "isodate",
+                                "package_name": "isodate",
+                                "installed_version": "0.6.1",
+                                "required_version": ">=0.5.4",
+                                "dependencies": [
+                                    {
+                                        "key": "six",
+                                        "package_name": "six",
+                                        "installed_version": "1.16.0",
+                                        "required_version": "Any",
+                                        "dependencies": []
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "leather",
+                                "package_name": "leather",
+                                "installed_version": "0.3.4",
+                                "required_version": ">=0.3.2",
+                                "dependencies": [
+                                    {
+                                        "key": "six",
+                                        "package_name": "six",
+                                        "installed_version": "1.16.0",
+                                        "required_version": ">=1.6.1",
+                                        "dependencies": []
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "parsedatetime",
+                                "package_name": "parsedatetime",
+                                "installed_version": "2.4",
+                                "required_version": ">=2.1,!=2.6,!=2.5",
+                                "dependencies": [
+                                    {
+                                        "key": "future",
+                                        "package_name": "future",
+                                        "installed_version": "0.18.2",
+                                        "required_version": "Any",
+                                        "dependencies": []
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "python-slugify",
+                                "package_name": "python-slugify",
+                                "installed_version": "6.1.2",
+                                "required_version": ">=1.2.1",
+                                "dependencies": [
+                                    {
+                                        "key": "text-unidecode",
+                                        "package_name": "text-unidecode",
+                                        "installed_version": "1.3",
+                                        "required_version": ">=1.3",
+                                        "dependencies": []
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "pytimeparse",
+                                "package_name": "pytimeparse",
+                                "installed_version": "1.1.8",
+                                "required_version": ">=1.1.5",
+                                "dependencies": []
+                            },
+                            {
+                                "key": "six",
+                                "package_name": "six",
+                                "installed_version": "1.16.0",
+                                "required_version": ">=1.9.0",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "sqlalchemy",
+                        "package_name": "sqlalchemy",
+                        "installed_version": "1.4.36",
+                        "required_version": ">=1.0.8",
+                        "dependencies": [
+                            {
+                                "key": "greenlet",
+                                "package_name": "greenlet",
+                                "installed_version": "1.1.2",
+                                "required_version": "!=0.4.17",
+                                "dependencies": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "six",
+                "package_name": "six",
+                "installed_version": "1.16.0",
+                "required_version": ">=1.6.1",
+                "dependencies": []
+            }
+        ]
+    },
+    {
+        "key": "graphviz",
+        "package_name": "graphviz",
+        "installed_version": "0.20",
+        "required_version": "0.20",
+        "dependencies": []
+    },
+    {
+        "key": "mkdocs-charts-plugin",
+        "package_name": "mkdocs-charts-plugin",
+        "installed_version": "0.0.8",
+        "required_version": "0.0.8",
+        "dependencies": [
+            {
+                "key": "mkdocs",
+                "package_name": "mkdocs",
+                "installed_version": "1.3.0",
+                "required_version": ">=1.1",
+                "dependencies": [
+                    {
+                        "key": "click",
+                        "package_name": "click",
+                        "installed_version": "8.1.3",
+                        "required_version": ">=3.3",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "ghp-import",
+                        "package_name": "ghp-import",
+                        "installed_version": "2.1.0",
+                        "required_version": ">=1.0",
+                        "dependencies": [
+                            {
+                                "key": "python-dateutil",
+                                "package_name": "python-dateutil",
+                                "installed_version": "2.8.2",
+                                "required_version": ">=2.8.1",
+                                "dependencies": [
+                                    {
+                                        "key": "six",
+                                        "package_name": "six",
+                                        "installed_version": "1.16.0",
+                                        "required_version": ">=1.5",
+                                        "dependencies": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "key": "importlib-metadata",
+                        "package_name": "importlib-metadata",
+                        "installed_version": "4.11.3",
+                        "required_version": ">=4.3",
+                        "dependencies": [
+                            {
+                                "key": "zipp",
+                                "package_name": "zipp",
+                                "installed_version": "3.8.0",
+                                "required_version": ">=0.5",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "jinja2",
+                        "package_name": "Jinja2",
+                        "installed_version": "3.1.2",
+                        "required_version": ">=2.10.2",
+                        "dependencies": [
+                            {
+                                "key": "markupsafe",
+                                "package_name": "MarkupSafe",
+                                "installed_version": "2.1.1",
+                                "required_version": ">=2.0",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "markdown",
+                        "package_name": "Markdown",
+                        "installed_version": "3.3.7",
+                        "required_version": ">=3.2.1",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "mergedeep",
+                        "package_name": "mergedeep",
+                        "installed_version": "1.3.4",
+                        "required_version": ">=1.3.4",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "packaging",
+                        "package_name": "packaging",
+                        "installed_version": "21.3",
+                        "required_version": ">=20.5",
+                        "dependencies": [
+                            {
+                                "key": "pyparsing",
+                                "package_name": "pyparsing",
+                                "installed_version": "3.0.8",
+                                "required_version": ">=2.0.2,!=3.0.5",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "pyyaml",
+                        "package_name": "PyYAML",
+                        "installed_version": "6.0",
+                        "required_version": ">=3.10",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "pyyaml-env-tag",
+                        "package_name": "pyyaml-env-tag",
+                        "installed_version": "0.1",
+                        "required_version": ">=0.1",
+                        "dependencies": [
+                            {
+                                "key": "pyyaml",
+                                "package_name": "pyyaml",
+                                "installed_version": "6.0",
+                                "required_version": "Any",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "watchdog",
+                        "package_name": "watchdog",
+                        "installed_version": "2.1.7",
+                        "required_version": ">=2.0",
+                        "dependencies": []
+                    }
+                ]
+            },
+            {
+                "key": "pymdown-extensions",
+                "package_name": "pymdown-extensions",
+                "installed_version": "9.4",
+                "required_version": ">=9.2",
+                "dependencies": [
+                    {
+                        "key": "markdown",
+                        "package_name": "markdown",
+                        "installed_version": "3.3.7",
+                        "required_version": ">=3.2",
+                        "dependencies": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "mkdocs-material",
+        "package_name": "mkdocs-material",
+        "installed_version": "8.2.14",
+        "required_version": "8.2.14",
+        "dependencies": [
+            {
+                "key": "jinja2",
+                "package_name": "jinja2",
+                "installed_version": "3.1.2",
+                "required_version": ">=2.11.1",
+                "dependencies": [
+                    {
+                        "key": "markupsafe",
+                        "package_name": "MarkupSafe",
+                        "installed_version": "2.1.1",
+                        "required_version": ">=2.0",
+                        "dependencies": []
+                    }
+                ]
+            },
+            {
+                "key": "markdown",
+                "package_name": "markdown",
+                "installed_version": "3.3.7",
+                "required_version": ">=3.2",
+                "dependencies": []
+            },
+            {
+                "key": "mkdocs",
+                "package_name": "mkdocs",
+                "installed_version": "1.3.0",
+                "required_version": ">=1.3.0",
+                "dependencies": [
+                    {
+                        "key": "click",
+                        "package_name": "click",
+                        "installed_version": "8.1.3",
+                        "required_version": ">=3.3",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "ghp-import",
+                        "package_name": "ghp-import",
+                        "installed_version": "2.1.0",
+                        "required_version": ">=1.0",
+                        "dependencies": [
+                            {
+                                "key": "python-dateutil",
+                                "package_name": "python-dateutil",
+                                "installed_version": "2.8.2",
+                                "required_version": ">=2.8.1",
+                                "dependencies": [
+                                    {
+                                        "key": "six",
+                                        "package_name": "six",
+                                        "installed_version": "1.16.0",
+                                        "required_version": ">=1.5",
+                                        "dependencies": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "key": "importlib-metadata",
+                        "package_name": "importlib-metadata",
+                        "installed_version": "4.11.3",
+                        "required_version": ">=4.3",
+                        "dependencies": [
+                            {
+                                "key": "zipp",
+                                "package_name": "zipp",
+                                "installed_version": "3.8.0",
+                                "required_version": ">=0.5",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "jinja2",
+                        "package_name": "Jinja2",
+                        "installed_version": "3.1.2",
+                        "required_version": ">=2.10.2",
+                        "dependencies": [
+                            {
+                                "key": "markupsafe",
+                                "package_name": "MarkupSafe",
+                                "installed_version": "2.1.1",
+                                "required_version": ">=2.0",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "markdown",
+                        "package_name": "Markdown",
+                        "installed_version": "3.3.7",
+                        "required_version": ">=3.2.1",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "mergedeep",
+                        "package_name": "mergedeep",
+                        "installed_version": "1.3.4",
+                        "required_version": ">=1.3.4",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "packaging",
+                        "package_name": "packaging",
+                        "installed_version": "21.3",
+                        "required_version": ">=20.5",
+                        "dependencies": [
+                            {
+                                "key": "pyparsing",
+                                "package_name": "pyparsing",
+                                "installed_version": "3.0.8",
+                                "required_version": ">=2.0.2,!=3.0.5",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "pyyaml",
+                        "package_name": "PyYAML",
+                        "installed_version": "6.0",
+                        "required_version": ">=3.10",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "pyyaml-env-tag",
+                        "package_name": "pyyaml-env-tag",
+                        "installed_version": "0.1",
+                        "required_version": ">=0.1",
+                        "dependencies": [
+                            {
+                                "key": "pyyaml",
+                                "package_name": "pyyaml",
+                                "installed_version": "6.0",
+                                "required_version": "Any",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "watchdog",
+                        "package_name": "watchdog",
+                        "installed_version": "2.1.7",
+                        "required_version": ">=2.0",
+                        "dependencies": []
+                    }
+                ]
+            },
+            {
+                "key": "mkdocs-material-extensions",
+                "package_name": "mkdocs-material-extensions",
+                "installed_version": "1.0.3",
+                "required_version": ">=1.0.3",
+                "dependencies": []
+            },
+            {
+                "key": "pygments",
+                "package_name": "pygments",
+                "installed_version": "2.12.0",
+                "required_version": ">=2.12",
+                "dependencies": []
+            },
+            {
+                "key": "pymdown-extensions",
+                "package_name": "pymdown-extensions",
+                "installed_version": "9.4",
+                "required_version": ">=9.4",
+                "dependencies": [
+                    {
+                        "key": "markdown",
+                        "package_name": "markdown",
+                        "installed_version": "3.3.7",
+                        "required_version": ">=3.2",
+                        "dependencies": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "mkdocs-table-reader-plugin",
+        "package_name": "mkdocs-table-reader-plugin",
+        "installed_version": "1.0.0",
+        "required_version": "1.0.0",
+        "dependencies": [
+            {
+                "key": "mkdocs",
+                "package_name": "mkdocs",
+                "installed_version": "1.3.0",
+                "required_version": ">=1.0",
+                "dependencies": [
+                    {
+                        "key": "click",
+                        "package_name": "click",
+                        "installed_version": "8.1.3",
+                        "required_version": ">=3.3",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "ghp-import",
+                        "package_name": "ghp-import",
+                        "installed_version": "2.1.0",
+                        "required_version": ">=1.0",
+                        "dependencies": [
+                            {
+                                "key": "python-dateutil",
+                                "package_name": "python-dateutil",
+                                "installed_version": "2.8.2",
+                                "required_version": ">=2.8.1",
+                                "dependencies": [
+                                    {
+                                        "key": "six",
+                                        "package_name": "six",
+                                        "installed_version": "1.16.0",
+                                        "required_version": ">=1.5",
+                                        "dependencies": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "key": "importlib-metadata",
+                        "package_name": "importlib-metadata",
+                        "installed_version": "4.11.3",
+                        "required_version": ">=4.3",
+                        "dependencies": [
+                            {
+                                "key": "zipp",
+                                "package_name": "zipp",
+                                "installed_version": "3.8.0",
+                                "required_version": ">=0.5",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "jinja2",
+                        "package_name": "Jinja2",
+                        "installed_version": "3.1.2",
+                        "required_version": ">=2.10.2",
+                        "dependencies": [
+                            {
+                                "key": "markupsafe",
+                                "package_name": "MarkupSafe",
+                                "installed_version": "2.1.1",
+                                "required_version": ">=2.0",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "markdown",
+                        "package_name": "Markdown",
+                        "installed_version": "3.3.7",
+                        "required_version": ">=3.2.1",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "mergedeep",
+                        "package_name": "mergedeep",
+                        "installed_version": "1.3.4",
+                        "required_version": ">=1.3.4",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "packaging",
+                        "package_name": "packaging",
+                        "installed_version": "21.3",
+                        "required_version": ">=20.5",
+                        "dependencies": [
+                            {
+                                "key": "pyparsing",
+                                "package_name": "pyparsing",
+                                "installed_version": "3.0.8",
+                                "required_version": ">=2.0.2,!=3.0.5",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "pyyaml",
+                        "package_name": "PyYAML",
+                        "installed_version": "6.0",
+                        "required_version": ">=3.10",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "pyyaml-env-tag",
+                        "package_name": "pyyaml-env-tag",
+                        "installed_version": "0.1",
+                        "required_version": ">=0.1",
+                        "dependencies": [
+                            {
+                                "key": "pyyaml",
+                                "package_name": "pyyaml",
+                                "installed_version": "6.0",
+                                "required_version": "Any",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "watchdog",
+                        "package_name": "watchdog",
+                        "installed_version": "2.1.7",
+                        "required_version": ">=2.0",
+                        "dependencies": []
+                    }
+                ]
+            },
+            {
+                "key": "pandas",
+                "package_name": "pandas",
+                "installed_version": "1.4.2",
+                "required_version": ">=1.1",
+                "dependencies": [
+                    {
+                        "key": "numpy",
+                        "package_name": "numpy",
+                        "installed_version": "1.22.3",
+                        "required_version": ">=1.21.0",
+                        "dependencies": []
+                    },
+                    {
+                        "key": "python-dateutil",
+                        "package_name": "python-dateutil",
+                        "installed_version": "2.8.2",
+                        "required_version": ">=2.8.1",
+                        "dependencies": [
+                            {
+                                "key": "six",
+                                "package_name": "six",
+                                "installed_version": "1.16.0",
+                                "required_version": ">=1.5",
+                                "dependencies": []
+                            }
+                        ]
+                    },
+                    {
+                        "key": "pytz",
+                        "package_name": "pytz",
+                        "installed_version": "2022.1",
+                        "required_version": ">=2020.1",
+                        "dependencies": []
+                    }
+                ]
+            },
+            {
+                "key": "pyyaml",
+                "package_name": "PyYAML",
+                "installed_version": "6.0",
+                "required_version": ">=5.4.1",
+                "dependencies": []
+            },
+            {
+                "key": "tabulate",
+                "package_name": "tabulate",
+                "installed_version": "0.8.9",
+                "required_version": ">=0.8.7",
+                "dependencies": []
+            }
+        ]
+    },
+    {
+        "key": "pipdeptree",
+        "package_name": "pipdeptree",
+        "installed_version": "2.2.1",
+        "required_version": "2.2.1",
+        "dependencies": [
+            {
+                "key": "pip",
+                "package_name": "pip",
+                "installed_version": "22.0.4",
+                "required_version": ">=6.0.0",
+                "dependencies": []
+            }
+        ]
+    },
+    {
+        "key": "setuptools",
+        "package_name": "setuptools",
+        "installed_version": "58.1.0",
+        "required_version": "58.1.0",
+        "dependencies": []
+    }
+]
