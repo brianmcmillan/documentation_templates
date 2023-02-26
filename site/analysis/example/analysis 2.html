@@ -1,0 +1,1831 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>Analysis Template - Data Product Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-price-of-a-big-mac-in-argentina-dramatically-increased-in-2018this-continued-through-2020" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index.html" title="Data Product Documentation" class="md-header__button md-logo" aria-label="Data Product Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15 19-6-2.11V5l6 2.11M20.5 3h-.16L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5a.5.5 0 0 0 .5.5c.05 0 .11 0 .16-.03L9 18.9l6 2.1 5.64-1.9c.21-.1.36-.25.36-.48V3.5a.5.5 0 0 0-.5-.5Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Data Product Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Analysis Template
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="Data Product Documentation" class="md-nav__button md-logo" aria-label="Data Product Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15 19-6-2.11V5l6 2.11M20.5 3h-.16L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5a.5.5 0 0 0 .5.5c.05 0 .11 0 .16-.03L9 18.9l6 2.1 5.64-1.9c.21-.1.36-.25.36-.48V3.5a.5.5 0 0 0-.5-.5Z"/></svg>
+
+    </a>
+    Data Product Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        Welcome
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../index.html">Analysis</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Analysis" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Analysis
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2_2">
+          Example
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Example" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Example
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Analysis Template
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="analysis.html" class="md-nav__link md-nav__link--active">
+        Analysis Template
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-price-of-a-big-mac-in-argentina-dramatically-increased-in-2018this-continued-through-2020" class="md-nav__link">
+    The price of a Big Mac in Argentina dramatically increased in 2018.This continued through 2020.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    Discussion
+  </a>
+  
+    <nav class="md-nav" aria-label="Discussion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-rows" class="md-nav__link">
+    Sample rows
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../documentation/index.html">Documentation</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Documentation" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/FAQ.html" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../documentation/background/index.html">Background</a>
+          
+            <label for="__nav_3_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Background" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Background
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/background/background_topic.html" class="md-nav__link">
+        Concept background
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../documentation/how_to/index.html">How to</a>
+          
+            <label for="__nav_3_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="How to" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          How to
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/how_to/howto_task.html" class="md-nav__link">
+        How to do X
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../documentation/reference/index.html">Reference</a>
+          
+            <label for="__nav_3_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Reference" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/reference/reference_subject.html" class="md-nav__link">
+        Component XYZ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_3" type="checkbox" id="__nav_3_5_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_5_3">
+          Configuration management
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Configuration management" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_5_3">
+          <span class="md-nav__icon md-icon"></span>
+          Configuration management
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/reference/configuration_management/application.html" class="md-nav__link">
+        Application settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/reference/configuration_management/data_pipeline.html" class="md-nav__link">
+        Data Pipeline
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/reference/configuration_management/database.html" class="md-nav__link">
+        Database Design
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/reference/configuration_management/files_and_directories.html" class="md-nav__link">
+        Files and Directories
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/reference/configuration_management/software_bom.html" class="md-nav__link">
+        Software Bill of Materials (BOM)
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_4" type="checkbox" id="__nav_3_5_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../documentation/reference/project_management/index.html">Project management</a>
+          
+            <label for="__nav_3_5_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Project management" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          Project management
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_4_2" type="checkbox" id="__nav_3_5_4_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../documentation/reference/project_management/1_Opportunities/index.html">1 Opportunities</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="1 Opportunities" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_5_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          1 Opportunities
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_4_3" type="checkbox" id="__nav_3_5_4_3" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../documentation/reference/project_management/2_Delivery/index.html">2 Delivery</a>
+          
+            <label for="__nav_3_5_4_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="2 Delivery" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_5_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          2 Delivery
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/reference/project_management/2_Delivery/AUTHORS.html" class="md-nav__link">
+        CONTRIBUTORS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/reference/project_management/2_Delivery/CHANGELOG.html" class="md-nav__link">
+        CHANGE LOG
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/reference/project_management/2_Delivery/DPC-NNN_data-product-context.html" class="md-nav__link">
+        DPC-### { Data Product }
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/reference/project_management/2_Delivery/LICENSE.html" class="md-nav__link">
+        LICENSE
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/reference/project_management/2_Delivery/NEWS.html" class="md-nav__link">
+        NEWS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/reference/project_management/2_Delivery/todo-project.html" class="md-nav__link">
+        To Do { Project }
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_4_4" type="checkbox" id="__nav_3_5_4_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../documentation/reference/project_management/3_Release/index.html">3 Release</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="3 Release" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_5_4_4">
+          <span class="md-nav__icon md-icon"></span>
+          3 Release
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_4_5" type="checkbox" id="__nav_3_5_4_5" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_5_4_5">
+          Templates
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Templates" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_5_4_5">
+          <span class="md-nav__icon md-icon"></span>
+          Templates
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/reference/project_management/templates/1PG-NNN_project.html" class="md-nav__link">
+        1PG-### { Title }
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/reference/project_management/templates/ADR-NNN_decision.html" class="md-nav__link">
+        ADR[BRD]-### { Title }
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/reference/project_management/templates/DC-NNN_data_contract.html" class="md-nav__link">
+        DC-### { Data Contract }
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/reference/project_management/templates/DPC-NNN_data-product-context.html" class="md-nav__link">
+        DPC-### { Data Product }
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/reference/project_management/templates/PRD-NNN_problem.html" class="md-nav__link">
+        PRD-### { Title }
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/reference/project_management/templates/RB-NNN_run_book.html" class="md-nav__link">
+        RB-### { Product }
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/reference/project_management/templates/RFC-NNN_comments.html" class="md-nav__link">
+        RFC-### { Title }
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/reference/project_management/templates/TODO_project.html" class="md-nav__link">
+        To Do { Project }
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../documentation/tutorial/index.html">Tutorial</a>
+          
+            <label for="__nav_3_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Tutorial" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          Tutorial
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/tutorial/tutorial_prerequsites.html" class="md-nav__link">
+        Prerequisites
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-price-of-a-big-mac-in-argentina-dramatically-increased-in-2018this-continued-through-2020" class="md-nav__link">
+    The price of a Big Mac in Argentina dramatically increased in 2018.This continued through 2020.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussion" class="md-nav__link">
+    Discussion
+  </a>
+  
+    <nav class="md-nav" aria-label="Discussion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-rows" class="md-nav__link">
+    Sample rows
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+  <h1>Analysis Template</h1>
+
+<!---
+The Analysis overview document is intended to be the gateway to the analytics documents and reporting of the project.
+
+File name: /documentation/analysis/index.md
+--->
+
+<p>{ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. }  </p>
+<h4 id="the-price-of-a-big-mac-in-argentina-dramatically-increased-in-2018this-continued-through-2020"><span style="color:coral">The price of a Big Mac in Argentina dramatically increased in 2018.<br>This continued through 2020.</span></h4>
+<blockquote>
+<p>Big Mac<br />
+<strong>Cost</strong> in ARS vs. EUR<br />
+Jan 2000..Jan 2020  </p>
+</blockquote>
+<p><vegachart style='width: 100%'  class="vegalite">{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://cdn.jsdelivr.net/gh/koaning/justcharts/bigmac.csv", 
+      "format": {
+        "type": "csv"
+      }
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "date", "type": "temporal"},
+      "y": {"field": "local_price", "type": "quantitative"},
+      "color": {"field": "name", "type": "nominal"}
+    }
+}</vegachart></p>
+<h3 id="discussion">Discussion</h3>
+<p><strong>Q1:</strong> { question }<br />
+<strong>A1:</strong> { answer }<br />
+<strong>D1:</strong> { discussion }  </p>
+<p><strong>Q1:</strong> { question }<br />
+<strong>A1:</strong> { answer }<br />
+<strong>D1:</strong> { discussion }  </p>
+<hr />
+<details class="- example">
+<summary>Data Profile</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Field descriptions</label><label for="__tabbed_1_2">Raw Data Profile</label><label for="__tabbed_1_3">Error Reporting</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th align="left">row</th>
+<th align="left">Field Name</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left">rowid</td>
+<td align="left">row id</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">date</td>
+<td align="left">Date (YYYY-MM-DD)</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">currency_code</td>
+<td align="left">Currency code</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">name</td>
+<td align="left">Country name</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">local_price</td>
+<td align="left">Price in local currency</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">dollar_ex</td>
+<td align="left">Unknown</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">dollar_price</td>
+<td align="left">Unknown</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">  1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">  2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">  3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">  4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">  5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">  6</a></span>
+<span class="normal"><a href="#__codelineno-0-7">  7</a></span>
+<span class="normal"><a href="#__codelineno-0-8">  8</a></span>
+<span class="normal"><a href="#__codelineno-0-9">  9</a></span>
+<span class="normal"><a href="#__codelineno-0-10"> 10</a></span>
+<span class="normal"><a href="#__codelineno-0-11"> 11</a></span>
+<span class="normal"><a href="#__codelineno-0-12"> 12</a></span>
+<span class="normal"><a href="#__codelineno-0-13"> 13</a></span>
+<span class="normal"><a href="#__codelineno-0-14"> 14</a></span>
+<span class="normal"><a href="#__codelineno-0-15"> 15</a></span>
+<span class="normal"><a href="#__codelineno-0-16"> 16</a></span>
+<span class="normal"><a href="#__codelineno-0-17"> 17</a></span>
+<span class="normal"><a href="#__codelineno-0-18"> 18</a></span>
+<span class="normal"><a href="#__codelineno-0-19"> 19</a></span>
+<span class="normal"><a href="#__codelineno-0-20"> 20</a></span>
+<span class="normal"><a href="#__codelineno-0-21"> 21</a></span>
+<span class="normal"><a href="#__codelineno-0-22"> 22</a></span>
+<span class="normal"><a href="#__codelineno-0-23"> 23</a></span>
+<span class="normal"><a href="#__codelineno-0-24"> 24</a></span>
+<span class="normal"><a href="#__codelineno-0-25"> 25</a></span>
+<span class="normal"><a href="#__codelineno-0-26"> 26</a></span>
+<span class="normal"><a href="#__codelineno-0-27"> 27</a></span>
+<span class="normal"><a href="#__codelineno-0-28"> 28</a></span>
+<span class="normal"><a href="#__codelineno-0-29"> 29</a></span>
+<span class="normal"><a href="#__codelineno-0-30"> 30</a></span>
+<span class="normal"><a href="#__codelineno-0-31"> 31</a></span>
+<span class="normal"><a href="#__codelineno-0-32"> 32</a></span>
+<span class="normal"><a href="#__codelineno-0-33"> 33</a></span>
+<span class="normal"><a href="#__codelineno-0-34"> 34</a></span>
+<span class="normal"><a href="#__codelineno-0-35"> 35</a></span>
+<span class="normal"><a href="#__codelineno-0-36"> 36</a></span>
+<span class="normal"><a href="#__codelineno-0-37"> 37</a></span>
+<span class="normal"><a href="#__codelineno-0-38"> 38</a></span>
+<span class="normal"><a href="#__codelineno-0-39"> 39</a></span>
+<span class="normal"><a href="#__codelineno-0-40"> 40</a></span>
+<span class="normal"><a href="#__codelineno-0-41"> 41</a></span>
+<span class="normal"><a href="#__codelineno-0-42"> 42</a></span>
+<span class="normal"><a href="#__codelineno-0-43"> 43</a></span>
+<span class="normal"><a href="#__codelineno-0-44"> 44</a></span>
+<span class="normal"><a href="#__codelineno-0-45"> 45</a></span>
+<span class="normal"><a href="#__codelineno-0-46"> 46</a></span>
+<span class="normal"><a href="#__codelineno-0-47"> 47</a></span>
+<span class="normal"><a href="#__codelineno-0-48"> 48</a></span>
+<span class="normal"><a href="#__codelineno-0-49"> 49</a></span>
+<span class="normal"><a href="#__codelineno-0-50"> 50</a></span>
+<span class="normal"><a href="#__codelineno-0-51"> 51</a></span>
+<span class="normal"><a href="#__codelineno-0-52"> 52</a></span>
+<span class="normal"><a href="#__codelineno-0-53"> 53</a></span>
+<span class="normal"><a href="#__codelineno-0-54"> 54</a></span>
+<span class="normal"><a href="#__codelineno-0-55"> 55</a></span>
+<span class="normal"><a href="#__codelineno-0-56"> 56</a></span>
+<span class="normal"><a href="#__codelineno-0-57"> 57</a></span>
+<span class="normal"><a href="#__codelineno-0-58"> 58</a></span>
+<span class="normal"><a href="#__codelineno-0-59"> 59</a></span>
+<span class="normal"><a href="#__codelineno-0-60"> 60</a></span>
+<span class="normal"><a href="#__codelineno-0-61"> 61</a></span>
+<span class="normal"><a href="#__codelineno-0-62"> 62</a></span>
+<span class="normal"><a href="#__codelineno-0-63"> 63</a></span>
+<span class="normal"><a href="#__codelineno-0-64"> 64</a></span>
+<span class="normal"><a href="#__codelineno-0-65"> 65</a></span>
+<span class="normal"><a href="#__codelineno-0-66"> 66</a></span>
+<span class="normal"><a href="#__codelineno-0-67"> 67</a></span>
+<span class="normal"><a href="#__codelineno-0-68"> 68</a></span>
+<span class="normal"><a href="#__codelineno-0-69"> 69</a></span>
+<span class="normal"><a href="#__codelineno-0-70"> 70</a></span>
+<span class="normal"><a href="#__codelineno-0-71"> 71</a></span>
+<span class="normal"><a href="#__codelineno-0-72"> 72</a></span>
+<span class="normal"><a href="#__codelineno-0-73"> 73</a></span>
+<span class="normal"><a href="#__codelineno-0-74"> 74</a></span>
+<span class="normal"><a href="#__codelineno-0-75"> 75</a></span>
+<span class="normal"><a href="#__codelineno-0-76"> 76</a></span>
+<span class="normal"><a href="#__codelineno-0-77"> 77</a></span>
+<span class="normal"><a href="#__codelineno-0-78"> 78</a></span>
+<span class="normal"><a href="#__codelineno-0-79"> 79</a></span>
+<span class="normal"><a href="#__codelineno-0-80"> 80</a></span>
+<span class="normal"><a href="#__codelineno-0-81"> 81</a></span>
+<span class="normal"><a href="#__codelineno-0-82"> 82</a></span>
+<span class="normal"><a href="#__codelineno-0-83"> 83</a></span>
+<span class="normal"><a href="#__codelineno-0-84"> 84</a></span>
+<span class="normal"><a href="#__codelineno-0-85"> 85</a></span>
+<span class="normal"><a href="#__codelineno-0-86"> 86</a></span>
+<span class="normal"><a href="#__codelineno-0-87"> 87</a></span>
+<span class="normal"><a href="#__codelineno-0-88"> 88</a></span>
+<span class="normal"><a href="#__codelineno-0-89"> 89</a></span>
+<span class="normal"><a href="#__codelineno-0-90"> 90</a></span>
+<span class="normal"><a href="#__codelineno-0-91"> 91</a></span>
+<span class="normal"><a href="#__codelineno-0-92"> 92</a></span>
+<span class="normal"><a href="#__codelineno-0-93"> 93</a></span>
+<span class="normal"><a href="#__codelineno-0-94"> 94</a></span>
+<span class="normal"><a href="#__codelineno-0-95"> 95</a></span>
+<span class="normal"><a href="#__codelineno-0-96"> 96</a></span>
+<span class="normal"><a href="#__codelineno-0-97"> 97</a></span>
+<span class="normal"><a href="#__codelineno-0-98"> 98</a></span>
+<span class="normal"><a href="#__codelineno-0-99"> 99</a></span>
+<span class="normal"><a href="#__codelineno-0-100">100</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>1. &quot;rowid&quot;
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>    Type of data:          Number
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>    Contains null values:  False
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>    Unique values:         832
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>    Smallest value:        1
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a>    Largest value:         17,250
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a>    Sum:                   7,135,856
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a>    Mean:                  8,576.75
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a>    Median:                8,563
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a>    StDev:                 4,993.93
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a>    Most common values:    1 (1x)
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a>                        10 (1x)
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a>                        29 (1x)
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a>                        38 (1x)
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a>                        57 (1x)
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a>2. &quot;date&quot;
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a>    Type of data:          Date
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a>    Contains null values:  False
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a>    Unique values:         32
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a>    Smallest value:        2000-04-01
+<a id="__codelineno-0-24" name="__codelineno-0-24"></a>    Largest value:         2020-01-14
+<a id="__codelineno-0-25" name="__codelineno-0-25"></a>    Most common values:    2000-04-01 (26x)
+<a id="__codelineno-0-26" name="__codelineno-0-26"></a>                        2001-04-01 (26x)
+<a id="__codelineno-0-27" name="__codelineno-0-27"></a>                        2002-04-01 (26x)
+<a id="__codelineno-0-28" name="__codelineno-0-28"></a>                        2003-04-01 (26x)
+<a id="__codelineno-0-29" name="__codelineno-0-29"></a>                        2004-05-01 (26x)
+<a id="__codelineno-0-30" name="__codelineno-0-30"></a>
+<a id="__codelineno-0-31" name="__codelineno-0-31"></a>3. &quot;currency_code&quot;
+<a id="__codelineno-0-32" name="__codelineno-0-32"></a>
+<a id="__codelineno-0-33" name="__codelineno-0-33"></a>    Type of data:          Text
+<a id="__codelineno-0-34" name="__codelineno-0-34"></a>    Contains null values:  False
+<a id="__codelineno-0-35" name="__codelineno-0-35"></a>    Unique values:         2
+<a id="__codelineno-0-36" name="__codelineno-0-36"></a>    Longest value:         3 characters
+<a id="__codelineno-0-37" name="__codelineno-0-37"></a>    Most common values:    ARS (416x)
+<a id="__codelineno-0-38" name="__codelineno-0-38"></a>                        EUR (416x)
+<a id="__codelineno-0-39" name="__codelineno-0-39"></a>
+<a id="__codelineno-0-40" name="__codelineno-0-40"></a>4. &quot;name&quot;
+<a id="__codelineno-0-41" name="__codelineno-0-41"></a>
+<a id="__codelineno-0-42" name="__codelineno-0-42"></a>    Type of data:          Text
+<a id="__codelineno-0-43" name="__codelineno-0-43"></a>    Contains null values:  False
+<a id="__codelineno-0-44" name="__codelineno-0-44"></a>    Unique values:         2
+<a id="__codelineno-0-45" name="__codelineno-0-45"></a>    Longest value:         9 characters
+<a id="__codelineno-0-46" name="__codelineno-0-46"></a>    Most common values:    Argentina (416x)
+<a id="__codelineno-0-47" name="__codelineno-0-47"></a>                        Euro area (416x)
+<a id="__codelineno-0-48" name="__codelineno-0-48"></a>
+<a id="__codelineno-0-49" name="__codelineno-0-49"></a>5. &quot;local_price&quot;
+<a id="__codelineno-0-50" name="__codelineno-0-50"></a>
+<a id="__codelineno-0-51" name="__codelineno-0-51"></a>    Type of data:          Number
+<a id="__codelineno-0-52" name="__codelineno-0-52"></a>    Contains null values:  False
+<a id="__codelineno-0-53" name="__codelineno-0-53"></a>    Unique values:         52
+<a id="__codelineno-0-54" name="__codelineno-0-54"></a>    Smallest value:        2.5
+<a id="__codelineno-0-55" name="__codelineno-0-55"></a>    Largest value:         171
+<a id="__codelineno-0-56" name="__codelineno-0-56"></a>    Sum:                   14,597.897
+<a id="__codelineno-0-57" name="__codelineno-0-57"></a>    Mean:                  17.546
+<a id="__codelineno-0-58" name="__codelineno-0-58"></a>    Median:                4.045
+<a id="__codelineno-0-59" name="__codelineno-0-59"></a>    StDev:                 30.098
+<a id="__codelineno-0-60" name="__codelineno-0-60"></a>    Most common values:    2.5 (39x)
+<a id="__codelineno-0-61" name="__codelineno-0-61"></a>                        21 (39x)
+<a id="__codelineno-0-62" name="__codelineno-0-62"></a>                        75 (39x)
+<a id="__codelineno-0-63" name="__codelineno-0-63"></a>                        4.75 (26x)
+<a id="__codelineno-0-64" name="__codelineno-0-64"></a>                        7 (26x)
+<a id="__codelineno-0-65" name="__codelineno-0-65"></a>
+<a id="__codelineno-0-66" name="__codelineno-0-66"></a>6. &quot;dollar_ex&quot;
+<a id="__codelineno-0-67" name="__codelineno-0-67"></a>
+<a id="__codelineno-0-68" name="__codelineno-0-68"></a>    Type of data:          Number
+<a id="__codelineno-0-69" name="__codelineno-0-69"></a>    Contains null values:  False
+<a id="__codelineno-0-70" name="__codelineno-0-70"></a>    Unique values:         63
+<a id="__codelineno-0-71" name="__codelineno-0-71"></a>    Smallest value:        0.63
+<a id="__codelineno-0-72" name="__codelineno-0-72"></a>    Largest value:         60.066
+<a id="__codelineno-0-73" name="__codelineno-0-73"></a>    Sum:                   4,828.539
+<a id="__codelineno-0-74" name="__codelineno-0-74"></a>    Mean:                  5.804
+<a id="__codelineno-0-75" name="__codelineno-0-75"></a>    Median:                1.099
+<a id="__codelineno-0-76" name="__codelineno-0-76"></a>    StDev:                 10.626
+<a id="__codelineno-0-77" name="__codelineno-0-77"></a>    Most common values:    1 (26x)
+<a id="__codelineno-0-78" name="__codelineno-0-78"></a>                        1.075 (13x)
+<a id="__codelineno-0-79" name="__codelineno-0-79"></a>                        1.136 (13x)
+<a id="__codelineno-0-80" name="__codelineno-0-80"></a>                        3.13 (13x)
+<a id="__codelineno-0-81" name="__codelineno-0-81"></a>                        1.124 (13x)
+<a id="__codelineno-0-82" name="__codelineno-0-82"></a>
+<a id="__codelineno-0-83" name="__codelineno-0-83"></a>7. &quot;dollar_price&quot;
+<a id="__codelineno-0-84" name="__codelineno-0-84"></a>
+<a id="__codelineno-0-85" name="__codelineno-0-85"></a>    Type of data:          Number
+<a id="__codelineno-0-86" name="__codelineno-0-86"></a>    Contains null values:  False
+<a id="__codelineno-0-87" name="__codelineno-0-87"></a>    Unique values:         63
+<a id="__codelineno-0-88" name="__codelineno-0-88"></a>    Smallest value:        0.799
+<a id="__codelineno-0-89" name="__codelineno-0-89"></a>    Largest value:         5.343
+<a id="__codelineno-0-90" name="__codelineno-0-90"></a>    Sum:                   2,930.106
+<a id="__codelineno-0-91" name="__codelineno-0-91"></a>    Mean:                  3.522
+<a id="__codelineno-0-92" name="__codelineno-0-92"></a>    Median:                3.705
+<a id="__codelineno-0-93" name="__codelineno-0-93"></a>    StDev:                 1.079
+<a id="__codelineno-0-94" name="__codelineno-0-94"></a>    Most common values:    2.5 (26x)
+<a id="__codelineno-0-95" name="__codelineno-0-95"></a>                        2.381 (13x)
+<a id="__codelineno-0-96" name="__codelineno-0-96"></a>                        2.262 (13x)
+<a id="__codelineno-0-97" name="__codelineno-0-97"></a>                        0.799 (13x)
+<a id="__codelineno-0-98" name="__codelineno-0-98"></a>                        2.376 (13x)
+<a id="__codelineno-0-99" name="__codelineno-0-99"></a>
+<a id="__codelineno-0-100" name="__codelineno-0-100"></a>Row count: 832
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p>No errors.</p>
+</div>
+</div>
+</div>
+</details>
+<h4 id="sample-rows">Sample rows</h4>
+<table>
+<thead>
+<tr>
+<th align="right">rowid</th>
+<th align="left">date</th>
+<th align="left">currency_code</th>
+<th align="left">name</th>
+<th align="right">local_price</th>
+<th align="right">dollar_ex</th>
+<th align="right">dollar_price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="left">2000-04-01</td>
+<td align="left">ARS</td>
+<td align="left">Argentina</td>
+<td align="right">2.5</td>
+<td align="right">1</td>
+<td align="right">2.5</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td align="left">2000-04-01</td>
+<td align="left">EUR</td>
+<td align="left">Euro area</td>
+<td align="right">2.56</td>
+<td align="right">1.07527</td>
+<td align="right">2.3808</td>
+</tr>
+<tr>
+<td align="right">29</td>
+<td align="left">2001-04-01</td>
+<td align="left">ARS</td>
+<td align="left">Argentina</td>
+<td align="right">2.5</td>
+<td align="right">1</td>
+<td align="right">2.5</td>
+</tr>
+<tr>
+<td align="right">38</td>
+<td align="left">2001-04-01</td>
+<td align="left">EUR</td>
+<td align="left">Euro area</td>
+<td align="right">2.57</td>
+<td align="right">1.13636</td>
+<td align="right">2.2616</td>
+</tr>
+<tr>
+<td align="right">57</td>
+<td align="left">2002-04-01</td>
+<td align="left">ARS</td>
+<td align="left">Argentina</td>
+<td align="right">2.5</td>
+<td align="right">3.13</td>
+<td align="right">0.798722</td>
+</tr>
+<tr>
+<td align="right">66</td>
+<td align="left">2002-04-01</td>
+<td align="left">EUR</td>
+<td align="left">Euro area</td>
+<td align="right">2.67</td>
+<td align="right">1.1236</td>
+<td align="right">2.3763</td>
+</tr>
+<tr>
+<td align="right">89</td>
+<td align="left">2003-04-01</td>
+<td align="left">ARS</td>
+<td align="left">Argentina</td>
+<td align="right">4.1</td>
+<td align="right">2.88</td>
+<td align="right">1.42361</td>
+</tr>
+<tr>
+<td align="right">99</td>
+<td align="left">2003-04-01</td>
+<td align="left">EUR</td>
+<td align="left">Euro area</td>
+<td align="right">2.71</td>
+<td align="right">0.909091</td>
+<td align="right">2.981</td>
+</tr>
+<tr>
+<td align="right">120</td>
+<td align="left">2004-05-01</td>
+<td align="left">ARS</td>
+<td align="left">Argentina</td>
+<td align="right">4.36</td>
+<td align="right">2.95</td>
+<td align="right">1.47797</td>
+</tr>
+<tr>
+<td align="right">132</td>
+<td align="left">2004-05-01</td>
+<td align="left">EUR</td>
+<td align="left">Euro area</td>
+<td align="right">2.74</td>
+<td align="right">0.833333</td>
+<td align="right">3.288</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a href="https://timvink.nl/reproducible-reports-with-mkdocs/">Reproducible Reports with MkDocs</a><br />
+<a href="https://www.ibcs.com/ibcs-standards-1-2/">IBSC Standards</a></p>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Analysis Overview" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Analysis Overview
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../documentation/index.html" class="md-footer__link md-footer__link--next" aria-label="Next: Project Documentation" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Project Documentation
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs.sticky", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+        <script src="../../js/mkdocs-charts-plugin.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../../javascripts/tablesort.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+      
+    
+  
+        <script>
+        var mkdocs_chart_plugin = {'data_path': '', 'use_data_path': 'True', 'vega_theme': 'default', 'vega_theme_dark': 'dark', 'vega_renderer': 'canvas', 'vega_width': 'container', 'fallback_width': '800', 'path_to_homepage': '../..'}
+        </script>
+        </body>
+</html>
