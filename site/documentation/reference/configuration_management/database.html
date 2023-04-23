@@ -8,8 +8,14 @@
       
       
       
+      
+        <link rel="prev" href="data_pipeline.html">
+      
+      
+        <link rel="next" href="files_and_directories.html">
+      
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
     
     
       
@@ -17,13 +23,13 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ded33207.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
-        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
+
     
     
     
@@ -36,10 +42,11 @@
       
     
     
-    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
   </head>
@@ -52,7 +59,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
   
     
     
@@ -78,7 +85,7 @@
 
   
 
-<header class="md-header md-header--lifted" data-md-component="header">
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../../index.html" title="Data Product Documentation" class="md-header__button md-logo" aria-label="Data Product Documentation" data-md-component="logo">
       
@@ -109,15 +116,13 @@
       <form class="md-header__option" data-md-component="palette">
         
           
-          
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
             </label>
           
         
-          
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
           
@@ -144,7 +149,7 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -156,7 +161,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -225,8 +230,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
       
       
         
@@ -249,7 +255,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="Analysis" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Analysis
@@ -267,8 +273,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
       
       
         
@@ -276,12 +283,12 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_2">
+        <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
           Example
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Example" data-md-level="2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_2">
           <span class="md-nav__icon md-icon"></span>
           Example
@@ -328,8 +335,9 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
         
@@ -360,7 +368,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="Documentation" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Documentation
@@ -392,8 +400,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
       
       
         
@@ -416,7 +425,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="Background" data-md-level="2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_3">
           <span class="md-nav__icon md-icon"></span>
           Background
@@ -455,8 +464,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
       
       
         
@@ -479,7 +489,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="How to" data-md-level="2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_4">
           <span class="md-nav__icon md-icon"></span>
           How to
@@ -520,8 +530,9 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" checked>
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
       
       
         
@@ -548,7 +559,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="Reference" data-md-level="2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3_5">
           <span class="md-nav__icon md-icon"></span>
           Reference
@@ -582,8 +593,9 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_3" type="checkbox" id="__nav_3_5_3" checked>
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_3" checked>
       
       
         
@@ -599,12 +611,12 @@
         
       
       
-        <label class="md-nav__link" for="__nav_3_5_3">
+        <label class="md-nav__link" for="__nav_3_5_3" id="__nav_3_5_3_label" tabindex="0">
           Configuration management
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Configuration management" data-md-level="3">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3_5_3">
           <span class="md-nav__icon md-icon"></span>
           Configuration management
@@ -648,7 +660,7 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
       
@@ -775,8 +787,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_4" type="checkbox" id="__nav_3_5_4" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_4" >
       
       
         
@@ -805,7 +818,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="Project management" data-md-level="3">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_5_4">
           <span class="md-nav__icon md-icon"></span>
           Project management
@@ -823,8 +836,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_4_2" type="checkbox" id="__nav_3_5_4_2" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_4_2" >
       
       
         
@@ -841,7 +855,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="1 Opportunities" data-md-level="4">
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_5_4_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_5_4_2">
           <span class="md-nav__icon md-icon"></span>
           1 Opportunities
@@ -866,8 +880,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_4_3" type="checkbox" id="__nav_3_5_4_3" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_4_3" >
       
       
         
@@ -900,7 +915,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="2 Delivery" data-md-level="4">
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_5_4_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_5_4_3">
           <span class="md-nav__icon md-icon"></span>
           2 Delivery
@@ -944,7 +959,7 @@
   
     <li class="md-nav__item">
       <a href="../project_management/2_Delivery/DPC-NNN_data-product-context.html" class="md-nav__link">
-        DPC-### { Data Product }
+        DPC-### { Data Product Context }
       </a>
     </li>
   
@@ -1009,8 +1024,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_4_4" type="checkbox" id="__nav_3_5_4_4" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_4_4" >
       
       
         
@@ -1027,7 +1043,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="3 Release" data-md-level="4">
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_5_4_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_5_4_4">
           <span class="md-nav__icon md-icon"></span>
           3 Release
@@ -1052,35 +1068,36 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_4_5" type="checkbox" id="__nav_3_5_4_5" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_4_5" >
       
       
-        <label class="md-nav__link" for="__nav_3_5_4_5">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_5_4_5" id="__nav_3_5_4_5_label" tabindex="0">
           Templates
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Templates" data-md-level="4">
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_5_4_5_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_5_4_5">
           <span class="md-nav__icon md-icon"></span>
           Templates
@@ -1229,8 +1246,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
       
       
         
@@ -1253,7 +1271,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="Tutorial" data-md-level="2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_6">
           <span class="md-nav__icon md-icon"></span>
           Tutorial
@@ -1369,10 +1387,11 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
+                  
 
 
   <h1>Database Design</h1>
@@ -1457,119 +1476,88 @@ File name: docs/configuration_management/software_bom.md
 <span class="normal"><a href="#__codelineno-0-63">63</a></span>
 <span class="normal"><a href="#__codelineno-0-64">64</a></span>
 <span class="normal"><a href="#__codelineno-0-65">65</a></span>
-<span class="normal"><a href="#__codelineno-0-66">66</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Sales Data Discovery Platform</span><span class="w"></span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nt">license</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CC Attribution 4.0 License</span><span class="w"></span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="nt">license_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://creativecommons.org/licenses/by/4.0/</span><span class="w"></span>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Building Data Products / UCI Machine Learning Repository</span><span class="w"></span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="nt">source_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://archive.ics.uci.edu/ml/datasets/Online+Retail+II/</span><span class="w"></span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="nt">databases</span><span class="p">:</span><span class="w"></span>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">  </span><span class="nt">sales</span><span class="p">:</span><span class="w"></span>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">    </span><span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Manual extract - online_retail_II.xlsx-Year_2010-2011</span><span class="w"></span>
-<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">    </span><span class="nt">description_html</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|-</span><span class="w"></span>
-<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">       </span><span class="no">&lt;strong&gt;Description:&lt;/strong&gt; Invoice data provided from a report.&lt;br&gt;</span><span class="w"></span>
-<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">       </span><span class="no">&lt;strong&gt;Source:&lt;/strong&gt; Manual extract&lt;br&gt;</span><span class="w"></span>
-<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">       </span><span class="no">&lt;strong&gt;File:&lt;/strong&gt; online_retail_II.xlsx-Year_2010-2011&lt;br&gt;</span><span class="w"></span>
-<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">       </span><span class="no">&lt;p&gt;&lt;/p&gt;</span><span class="w"></span>
-<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">       </span><span class="no">&lt;a href = &quot;mailto: sales.manager@example.com&quot;&gt;Business Contact&lt;/a&gt;&lt;br&gt;</span><span class="w"></span>
-<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">       </span><span class="no">&lt;a href = &quot;mailto: data.sales@example.com&quot;&gt;Technical Contact&lt;/a&gt;</span><span class="w"></span>
-<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">       </span><span class="no">&lt;p&gt;&lt;/p&gt;</span><span class="w"></span>
-<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">       </span><span class="no">&lt;strong&gt;Reports:&lt;/strong&gt;&lt;br&gt;</span><span class="w"></span>
-<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">        </span><span class="no">&lt;a href=&quot;/static/WEEKLY_TOP_SALES_RANK_004.html&quot; target=&quot;_blank&quot;&gt;Weekly Top Sales Rank&lt;/a&gt;&lt;br&gt;</span><span class="w"></span>
-<a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">       </span><span class="no">&lt;p&gt;&lt;/p&gt;</span><span class="w"></span>
-<a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">    </span><span class="nt">tables</span><span class="p">:</span><span class="w"></span>
-<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">      </span><span class="nt">INFO_WEEKLY_TOP_SALES_RANK_002</span><span class="p">:</span><span class="w"></span>
-<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="w">        </span><span class="nt">description_html</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|-</span><span class="w"></span>
-<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">         </span><span class="no">&lt;strong&gt;Description:&lt;/strong&gt; Sales revenue for the top 10 products in each week of the previous 6 months.&lt;br&gt;</span><span class="w"></span>
-<a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="w">         </span><span class="no">&lt;strong&gt;Source:&lt;/strong&gt; Database table&lt;br&gt;</span><span class="w"></span>
-<a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="w">         </span><span class="no">&lt;strong&gt;Source table(s):&lt;/strong&gt; INFO_WEEKLY_TOP_SALES_RANK_002</span><span class="w"></span>
-<a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="w">         </span><span class="no">&lt;p&gt;&lt;/p&gt;</span><span class="w"></span>
-<a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="w">         </span><span class="no">&lt;strong&gt;Reports:&lt;/strong&gt;&lt;br&gt;</span><span class="w"></span>
-<a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="w">         </span><span class="no">&lt;a href=&quot;/static/WEEKLY_TOP_SALES_RANK_004.html&quot; target=&quot;_blank&quot;&gt;Weekly Top Sales Rank&lt;/a&gt;&lt;br&gt;</span><span class="w"></span>
-<a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="w">         </span><span class="no">&lt;p&gt;&lt;/p&gt;</span><span class="w"></span>
-<a id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="w">        </span><span class="nt">columns</span><span class="p">:</span><span class="w"></span>
+<span class="normal"><a href="#__codelineno-0-66">66</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Sales Data Discovery Platform</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="nt">license</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CC Attribution 4.0 License</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="nt">license_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://creativecommons.org/licenses/by/4.0/</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Building Data Products / UCI Machine Learning Repository</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="nt">source_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://archive.ics.uci.edu/ml/datasets/Online+Retail+II/</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="nt">databases</span><span class="p">:</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">  </span><span class="nt">sales</span><span class="p">:</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">    </span><span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Manual extract - online_retail_II.xlsx-Year_2010-2011</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">    </span><span class="nt">description_html</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|-</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">       </span><span class="no">&lt;strong&gt;Description:&lt;/strong&gt; Invoice data provided from a report.&lt;br&gt;</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">       </span><span class="no">&lt;strong&gt;Source:&lt;/strong&gt; Manual extract&lt;br&gt;</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">       </span><span class="no">&lt;strong&gt;File:&lt;/strong&gt; online_retail_II.xlsx-Year_2010-2011&lt;br&gt;</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">       </span><span class="no">&lt;p&gt;&lt;/p&gt;</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">       </span><span class="no">&lt;a href = &quot;mailto: sales.manager@example.com&quot;&gt;Business Contact&lt;/a&gt;&lt;br&gt;</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">       </span><span class="no">&lt;a href = &quot;mailto: data.sales@example.com&quot;&gt;Technical Contact&lt;/a&gt;</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">       </span><span class="no">&lt;p&gt;&lt;/p&gt;</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">       </span><span class="no">&lt;strong&gt;Reports:&lt;/strong&gt;&lt;br&gt;</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">        </span><span class="no">&lt;a href=&quot;/static/WEEKLY_TOP_SALES_RANK_004.html&quot; target=&quot;_blank&quot;&gt;Weekly Top Sales Rank&lt;/a&gt;&lt;br&gt;</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">       </span><span class="no">&lt;p&gt;&lt;/p&gt;</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="w">    </span><span class="nt">tables</span><span class="p">:</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="w">      </span><span class="nt">INFO_WEEKLY_TOP_SALES_RANK_002</span><span class="p">:</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="w">        </span><span class="nt">description_html</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|-</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="w">         </span><span class="no">&lt;strong&gt;Description:&lt;/strong&gt; Sales revenue for the top 10 products in each week of the previous 6 months.&lt;br&gt;</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="w">         </span><span class="no">&lt;strong&gt;Source:&lt;/strong&gt; Database table&lt;br&gt;</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="w">         </span><span class="no">&lt;strong&gt;Source table(s):&lt;/strong&gt; INFO_WEEKLY_TOP_SALES_RANK_002</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="w">         </span><span class="no">&lt;p&gt;&lt;/p&gt;</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="w">         </span><span class="no">&lt;strong&gt;Reports:&lt;/strong&gt;&lt;br&gt;</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="w">         </span><span class="no">&lt;a href=&quot;/static/WEEKLY_TOP_SALES_RANK_004.html&quot; target=&quot;_blank&quot;&gt;Weekly Top Sales Rank&lt;/a&gt;&lt;br&gt;</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="w">         </span><span class="no">&lt;p&gt;&lt;/p&gt;</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="w">        </span><span class="nt">columns</span><span class="p">:</span>
 <a id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="w">            </span><span class="nt">row_id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Internal</span><span class="nv"> </span><span class="s">row</span><span class="nv"> </span><span class="s">ID</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">record</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">database.&quot;</span><span class="w"> </span>
 <a id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="w">            </span><span class="nt">end_of_week_ssmtwtf</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;End</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">week</span><span class="nv"> </span><span class="s">date</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">business</span><span class="nv"> </span><span class="s">week</span><span class="nv"> </span><span class="s">starting</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">Saturday</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">ending</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">Friday.&quot;</span><span class="w"> </span>
 <a id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="w">            </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Rank</span><span class="nv"> </span><span class="s">position</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">total</span><span class="nv"> </span><span class="s">revenue</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">business</span><span class="nv"> </span><span class="s">week.</span><span class="nv"> </span><span class="s">Only</span><span class="nv"> </span><span class="s">top</span><span class="nv"> </span><span class="s">10</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">each</span><span class="nv"> </span><span class="s">week</span><span class="nv"> </span><span class="s">shown.&quot;</span><span class="w"> </span>
 <a id="__codelineno-0-34" name="__codelineno-0-34"></a><span class="w">            </span><span class="nt">stock_code</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Stock</span><span class="nv"> </span><span class="s">Code</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">product.&quot;</span><span class="w"> </span>
 <a id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="w">            </span><span class="nt">preferred_description</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;The</span><span class="nv"> </span><span class="s">preferred</span><span class="nv"> </span><span class="s">description</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">product.&quot;</span><span class="w"> </span>
-<a id="__codelineno-0-36" name="__codelineno-0-36"></a><span class="w">            </span><span class="nt">quantity</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Quantuty</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">product</span><span class="nv"> </span><span class="s">sold.&quot;</span><span class="w"></span>
-<a id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="w">            </span><span class="nt">avg_price</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Average</span><span class="nv"> </span><span class="s">price</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">product</span><span class="nv"> </span><span class="s">sold.</span><span class="nv"> </span><span class="s">Normalizes</span><span class="nv"> </span><span class="s">Retail</span><span class="nv"> </span><span class="s">vs.</span><span class="nv"> </span><span class="s">Wholesale</span><span class="nv"> </span><span class="s">at</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">point.&quot;</span><span class="w"></span>
-<a id="__codelineno-0-38" name="__codelineno-0-38"></a><span class="w">            </span><span class="nt">total_sales_revenue</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Quantity</span><span class="nv"> </span><span class="s">sold</span><span class="nv"> </span><span class="s">multiplied</span><span class="nv"> </span><span class="s">by</span><span class="nv"> </span><span class="s">average</span><span class="nv"> </span><span class="s">price.&quot;</span><span class="w"></span>
-<a id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="w">    </span><span class="nt">queries</span><span class="p">:</span><span class="w"></span>
-<a id="__codelineno-0-40" name="__codelineno-0-40"></a><span class="w">      </span><span class="nt">preferred_stock_code_description</span><span class="p">:</span><span class="w"></span>
-<a id="__codelineno-0-41" name="__codelineno-0-41"></a><span class="w">        </span><span class="nt">sql</span><span class="p">:</span><span class="w">  </span><span class="p p-Indicator">|-</span><span class="w"></span>
-<a id="__codelineno-0-42" name="__codelineno-0-42"></a><span class="w">          </span><span class="no">SELECT</span><span class="w"></span>
-<a id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="w">            </span><span class="no">A.stock_code,</span><span class="w"></span>
-<a id="__codelineno-0-44" name="__codelineno-0-44"></a><span class="w">            </span><span class="no">COALESCE(B.preferred_description,A.stock_code) AS preferred_description</span><span class="w"></span>
-<a id="__codelineno-0-45" name="__codelineno-0-45"></a><span class="w">          </span><span class="no">FROM BHUB_STOCK_CODES_001 A</span><span class="w"></span>
-<a id="__codelineno-0-46" name="__codelineno-0-46"></a><span class="w">            </span><span class="no">LEFT OUTER JOIN BLNK_STOCK_CODE_PREFERRED_DESCRIPTION_001 B</span><span class="w"></span>
-<a id="__codelineno-0-47" name="__codelineno-0-47"></a><span class="w">            </span><span class="no">ON (A.stock_code_hkey = B.stock_code_hkey)</span><span class="w"></span>
-<a id="__codelineno-0-48" name="__codelineno-0-48"></a><span class="w">          </span><span class="no">ORDER BY</span><span class="w"></span>
-<a id="__codelineno-0-49" name="__codelineno-0-49"></a><span class="w">            </span><span class="no">A.stock_code DESC</span><span class="w"></span>
-<a id="__codelineno-0-50" name="__codelineno-0-50"></a><span class="w">        </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Preferred stock code description.</span><span class="w"></span>
-<a id="__codelineno-0-51" name="__codelineno-0-51"></a><span class="w">        </span><span class="nt">description_html</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|-</span><span class="w"></span>
-<a id="__codelineno-0-52" name="__codelineno-0-52"></a><span class="w">          </span><span class="no">&lt;p&gt;Cleaned up product descriptions for each stock code (SKU).&lt;/p&gt;    </span><span class="w"></span>
-<a id="__codelineno-0-53" name="__codelineno-0-53"></a><span class="w">      </span><span class="nt">stock_code_description_cleanup</span><span class="p">:</span><span class="w"></span>
-<a id="__codelineno-0-54" name="__codelineno-0-54"></a><span class="w">        </span><span class="nt">sql</span><span class="p">:</span><span class="w">  </span><span class="p p-Indicator">|-</span><span class="w"></span>
-<a id="__codelineno-0-55" name="__codelineno-0-55"></a><span class="w">          </span><span class="no">SELECT</span><span class="w"></span>
-<a id="__codelineno-0-56" name="__codelineno-0-56"></a><span class="w">            </span><span class="no">A.stock_code,</span><span class="w"></span>
-<a id="__codelineno-0-57" name="__codelineno-0-57"></a><span class="w">            </span><span class="no">COALESCE(B.preferred_description,A.stock_code) AS preferred_description</span><span class="w"></span>
-<a id="__codelineno-0-58" name="__codelineno-0-58"></a><span class="w">          </span><span class="no">FROM BHUB_STOCK_CODES_001 A</span><span class="w"></span>
-<a id="__codelineno-0-59" name="__codelineno-0-59"></a><span class="w">            </span><span class="no">LEFT OUTER JOIN BLNK_STOCK_CODE_PREFERRED_DESCRIPTION_001 B</span><span class="w"></span>
-<a id="__codelineno-0-60" name="__codelineno-0-60"></a><span class="w">            </span><span class="no">ON (A.stock_code_hkey = B.stock_code_hkey)</span><span class="w"></span>
-<a id="__codelineno-0-61" name="__codelineno-0-61"></a><span class="w">          </span><span class="no">WHERE B.preferred_description IS NULL  </span><span class="w"></span>
-<a id="__codelineno-0-62" name="__codelineno-0-62"></a><span class="w">          </span><span class="no">ORDER BY</span><span class="w"></span>
-<a id="__codelineno-0-63" name="__codelineno-0-63"></a><span class="w">            </span><span class="no">A.stock_code DESC</span><span class="w"></span>
-<a id="__codelineno-0-64" name="__codelineno-0-64"></a><span class="w">        </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Stock code description cleanup.</span><span class="w"></span>
-<a id="__codelineno-0-65" name="__codelineno-0-65"></a><span class="w">        </span><span class="nt">description_html</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|-</span><span class="w"></span>
-<a id="__codelineno-0-66" name="__codelineno-0-66"></a><span class="w">          </span><span class="no">&lt;p&gt;Stock codes without a useful product description.&lt;/p&gt;            </span><span class="w"></span>
+<a id="__codelineno-0-36" name="__codelineno-0-36"></a><span class="w">            </span><span class="nt">quantity</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Quantuty</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">product</span><span class="nv"> </span><span class="s">sold.&quot;</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="w">            </span><span class="nt">avg_price</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Average</span><span class="nv"> </span><span class="s">price</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">product</span><span class="nv"> </span><span class="s">sold.</span><span class="nv"> </span><span class="s">Normalizes</span><span class="nv"> </span><span class="s">Retail</span><span class="nv"> </span><span class="s">vs.</span><span class="nv"> </span><span class="s">Wholesale</span><span class="nv"> </span><span class="s">at</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">point.&quot;</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38"></a><span class="w">            </span><span class="nt">total_sales_revenue</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Quantity</span><span class="nv"> </span><span class="s">sold</span><span class="nv"> </span><span class="s">multiplied</span><span class="nv"> </span><span class="s">by</span><span class="nv"> </span><span class="s">average</span><span class="nv"> </span><span class="s">price.&quot;</span>
+<a id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="w">    </span><span class="nt">queries</span><span class="p">:</span>
+<a id="__codelineno-0-40" name="__codelineno-0-40"></a><span class="w">      </span><span class="nt">preferred_stock_code_description</span><span class="p">:</span>
+<a id="__codelineno-0-41" name="__codelineno-0-41"></a><span class="w">        </span><span class="nt">sql</span><span class="p">:</span><span class="w">  </span><span class="p p-Indicator">|-</span>
+<a id="__codelineno-0-42" name="__codelineno-0-42"></a><span class="w">          </span><span class="no">SELECT</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="w">            </span><span class="no">A.stock_code,</span>
+<a id="__codelineno-0-44" name="__codelineno-0-44"></a><span class="w">            </span><span class="no">COALESCE(B.preferred_description,A.stock_code) AS preferred_description</span>
+<a id="__codelineno-0-45" name="__codelineno-0-45"></a><span class="w">          </span><span class="no">FROM BHUB_STOCK_CODES_001 A</span>
+<a id="__codelineno-0-46" name="__codelineno-0-46"></a><span class="w">            </span><span class="no">LEFT OUTER JOIN BLNK_STOCK_CODE_PREFERRED_DESCRIPTION_001 B</span>
+<a id="__codelineno-0-47" name="__codelineno-0-47"></a><span class="w">            </span><span class="no">ON (A.stock_code_hkey = B.stock_code_hkey)</span>
+<a id="__codelineno-0-48" name="__codelineno-0-48"></a><span class="w">          </span><span class="no">ORDER BY</span>
+<a id="__codelineno-0-49" name="__codelineno-0-49"></a><span class="w">            </span><span class="no">A.stock_code DESC</span>
+<a id="__codelineno-0-50" name="__codelineno-0-50"></a><span class="w">        </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Preferred stock code description.</span>
+<a id="__codelineno-0-51" name="__codelineno-0-51"></a><span class="w">        </span><span class="nt">description_html</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|-</span>
+<a id="__codelineno-0-52" name="__codelineno-0-52"></a><span class="w">          </span><span class="no">&lt;p&gt;Cleaned up product descriptions for each stock code (SKU).&lt;/p&gt;    </span>
+<a id="__codelineno-0-53" name="__codelineno-0-53"></a><span class="w">      </span><span class="nt">stock_code_description_cleanup</span><span class="p">:</span>
+<a id="__codelineno-0-54" name="__codelineno-0-54"></a><span class="w">        </span><span class="nt">sql</span><span class="p">:</span><span class="w">  </span><span class="p p-Indicator">|-</span>
+<a id="__codelineno-0-55" name="__codelineno-0-55"></a><span class="w">          </span><span class="no">SELECT</span>
+<a id="__codelineno-0-56" name="__codelineno-0-56"></a><span class="w">            </span><span class="no">A.stock_code,</span>
+<a id="__codelineno-0-57" name="__codelineno-0-57"></a><span class="w">            </span><span class="no">COALESCE(B.preferred_description,A.stock_code) AS preferred_description</span>
+<a id="__codelineno-0-58" name="__codelineno-0-58"></a><span class="w">          </span><span class="no">FROM BHUB_STOCK_CODES_001 A</span>
+<a id="__codelineno-0-59" name="__codelineno-0-59"></a><span class="w">            </span><span class="no">LEFT OUTER JOIN BLNK_STOCK_CODE_PREFERRED_DESCRIPTION_001 B</span>
+<a id="__codelineno-0-60" name="__codelineno-0-60"></a><span class="w">            </span><span class="no">ON (A.stock_code_hkey = B.stock_code_hkey)</span>
+<a id="__codelineno-0-61" name="__codelineno-0-61"></a><span class="w">          </span><span class="no">WHERE B.preferred_description IS NULL  </span>
+<a id="__codelineno-0-62" name="__codelineno-0-62"></a><span class="w">          </span><span class="no">ORDER BY</span>
+<a id="__codelineno-0-63" name="__codelineno-0-63"></a><span class="w">            </span><span class="no">A.stock_code DESC</span>
+<a id="__codelineno-0-64" name="__codelineno-0-64"></a><span class="w">        </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Stock code description cleanup.</span>
+<a id="__codelineno-0-65" name="__codelineno-0-65"></a><span class="w">        </span><span class="nt">description_html</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|-</span>
+<a id="__codelineno-0-66" name="__codelineno-0-66"></a><span class="w">          </span><span class="no">&lt;p&gt;Stock codes without a useful product description.&lt;/p&gt;            </span>
 </code></pre></div></td></tr></table></div>
 
-              
-            </article>
-            
-          </div>
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="data_pipeline.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Data Pipeline" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Data Pipeline
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="files_and_directories.html" class="md-footer__link md-footer__link--next" aria-label="Next: Files and Directories" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Files and Directories
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1591,10 +1579,11 @@ File name: docs/configuration_management/software_bom.md
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs.sticky", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs.sticky", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.51198bba.min.js"></script>
       
         <script src="../../../js/mkdocs-charts-plugin.js"></script>
       

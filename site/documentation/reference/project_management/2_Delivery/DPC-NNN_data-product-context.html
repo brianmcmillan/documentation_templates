@@ -8,22 +8,28 @@
       
       
       
+      
+        <link rel="prev" href="CHANGELOG.html">
+      
+      
+        <link rel="next" href="LICENSE.html">
+      
       <link rel="icon" href="../../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
     
     
       
-        <title>DPC-### { Data Product } - Data Product Documentation</title>
+        <title>DPC-### { Data Product Context } - Data Product Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ded33207.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.cbb835fc.min.css">
-        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.a0c5b2b5.min.css">
       
       
+
     
     
     
@@ -36,10 +42,11 @@
       
     
     
-    <script>__md_scope=new URL("../../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
   </head>
@@ -52,7 +59,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
   
     
     
@@ -64,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#customer-motivation" class="md-skip">
+        <a href="#target-value" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +85,7 @@
 
   
 
-<header class="md-header md-header--lifted" data-md-component="header">
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../../../../index.html" title="Data Product Documentation" class="md-header__button md-logo" aria-label="Data Product Documentation" data-md-component="logo">
       
@@ -99,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              DPC-### { Data Product }
+              DPC-### { Data Product Context }
             
           </span>
         </div>
@@ -109,15 +116,13 @@
       <form class="md-header__option" data-md-component="palette">
         
           
-          
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
             </label>
           
         
-          
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
           
@@ -144,7 +149,7 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -156,7 +161,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -225,8 +230,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
       
       
         
@@ -249,7 +255,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="Analysis" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           Analysis
@@ -267,8 +273,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
       
       
         
@@ -276,12 +283,12 @@
         
       
       
-        <label class="md-nav__link" for="__nav_2_2">
+        <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
           Example
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Example" data-md-level="2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_2">
           <span class="md-nav__icon md-icon"></span>
           Example
@@ -328,8 +335,9 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
         
@@ -360,7 +368,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="Documentation" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Documentation
@@ -392,8 +400,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
       
       
         
@@ -416,7 +425,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="Background" data-md-level="2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_3">
           <span class="md-nav__icon md-icon"></span>
           Background
@@ -455,8 +464,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
       
       
         
@@ -479,7 +489,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="How to" data-md-level="2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_4">
           <span class="md-nav__icon md-icon"></span>
           How to
@@ -520,8 +530,9 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" checked>
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
       
       
         
@@ -548,7 +559,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="Reference" data-md-level="2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3_5">
           <span class="md-nav__icon md-icon"></span>
           Reference
@@ -580,8 +591,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_3" type="checkbox" id="__nav_3_5_3" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_3" >
       
       
         
@@ -597,12 +609,12 @@
         
       
       
-        <label class="md-nav__link" for="__nav_3_5_3">
+        <label class="md-nav__link" for="__nav_3_5_3" id="__nav_3_5_3_label" tabindex="0">
           Configuration management
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Configuration management" data-md-level="3">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_5_3">
           <span class="md-nav__icon md-icon"></span>
           Configuration management
@@ -697,8 +709,9 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_4" type="checkbox" id="__nav_3_5_4" checked>
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_4" checked>
       
       
         
@@ -727,7 +740,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="Project management" data-md-level="3">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_5_4_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3_5_4">
           <span class="md-nav__icon md-icon"></span>
           Project management
@@ -745,8 +758,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_4_2" type="checkbox" id="__nav_3_5_4_2" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_4_2" >
       
       
         
@@ -763,7 +777,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="1 Opportunities" data-md-level="4">
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_5_4_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_5_4_2">
           <span class="md-nav__icon md-icon"></span>
           1 Opportunities
@@ -790,8 +804,9 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_4_3" type="checkbox" id="__nav_3_5_4_3" checked>
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_4_3" checked>
       
       
         
@@ -824,7 +839,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="2 Delivery" data-md-level="4">
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_5_4_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3_5_4_3">
           <span class="md-nav__icon md-icon"></span>
           2 Delivery
@@ -870,17 +885,17 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          DPC-### { Data Product }
+          DPC-### { Data Product Context }
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="DPC-NNN_data-product-context.html" class="md-nav__link md-nav__link--active">
-        DPC-### { Data Product }
+        DPC-### { Data Product Context }
       </a>
       
         
@@ -897,11 +912,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#customer-motivation" class="md-nav__link">
-    Customer Motivation
+  <a href="#target-value" class="md-nav__link">
+    Target Value
   </a>
   
-    <nav class="md-nav" aria-label="Customer Motivation">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision-maker-motivation" class="md-nav__link">
+    Decision Maker Motivation
+  </a>
+  
+    <nav class="md-nav" aria-label="Decision Maker Motivation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -919,6 +941,20 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#business-questions" class="md-nav__link">
+    Business Questions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#business-value" class="md-nav__link">
+    Business value
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#bootstrap" class="md-nav__link">
     Bootstrap
   </a>
@@ -926,8 +962,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#options" class="md-nav__link">
-    Options
+  <a href="#optional-solution" class="md-nav__link">
+    Optional Solution
   </a>
   
 </li>
@@ -939,78 +975,9 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#solution-scope" class="md-nav__link">
-    Solution Scope
-  </a>
-  
-    <nav class="md-nav" aria-label="Solution Scope">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#business-value" class="md-nav__link">
-    Business value
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#business-questions" class="md-nav__link">
-    Business Questions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-metrics" class="md-nav__link">
-    Data &amp; Metrics
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#business-events" class="md-nav__link">
-    Business Events
-  </a>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#new-habits" class="md-nav__link">
     New Habits
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#domains" class="md-nav__link">
-    Domains
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#integration-pattern" class="md-nav__link">
-    Integration Pattern
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#decision-timing" class="md-nav__link">
-    Decision Timing
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#delivery-pattern" class="md-nav__link">
-    Delivery Pattern
   </a>
   
 </li>
@@ -1028,15 +995,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#value-chain" class="md-nav__link">
-    Value Chain
+  <a href="#actions" class="md-nav__link">
+    Actions
   </a>
+  
+    <nav class="md-nav" aria-label="Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#taking-action" class="md-nav__link">
+    Taking Action
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#target-value" class="md-nav__link">
-    Target Value
+  <a href="#value-chain" class="md-nav__link">
+    Value Chain
   </a>
   
 </li>
@@ -1050,8 +1030,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#event-data-sources" class="md-nav__link">
-    Event / Data Sources
+  <a href="#events-actions-entities" class="md-nav__link">
+    Events / Actions / Entities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-products-reports-dashboards-apis" class="md-nav__link">
+    Data Products (Reports / Dashboards / APIs)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#systems" class="md-nav__link">
+    Systems
   </a>
   
 </li>
@@ -1064,8 +1058,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#custom-reports" class="md-nav__link">
-    Custom Reports
+  <a href="#business-metrics" class="md-nav__link">
+    Business Metrics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activities" class="md-nav__link">
+    Activities
   </a>
   
 </li>
@@ -1073,13 +1074,6 @@
           <li class="md-nav__item">
   <a href="#technical-assumptions" class="md-nav__link">
     Technical Assumptions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#duration" class="md-nav__link">
-    Duration
   </a>
   
 </li>
@@ -1163,8 +1157,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_4_4" type="checkbox" id="__nav_3_5_4_4" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_4_4" >
       
       
         
@@ -1181,7 +1176,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="3 Release" data-md-level="4">
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_5_4_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_5_4_4">
           <span class="md-nav__icon md-icon"></span>
           3 Release
@@ -1206,35 +1201,36 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5_4_5" type="checkbox" id="__nav_3_5_4_5" >
       
       
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5_4_5" >
       
       
-        <label class="md-nav__link" for="__nav_3_5_4_5">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_5_4_5" id="__nav_3_5_4_5_label" tabindex="0">
           Templates
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Templates" data-md-level="4">
+      <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_3_5_4_5_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_5_4_5">
           <span class="md-nav__icon md-icon"></span>
           Templates
@@ -1383,8 +1379,9 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_6" type="checkbox" id="__nav_3_6" >
       
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
       
       
         
@@ -1407,7 +1404,7 @@
           
         </div>
       
-      <nav class="md-nav" aria-label="Tutorial" data-md-level="2">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3_6">
           <span class="md-nav__icon md-icon"></span>
           Tutorial
@@ -1468,11 +1465,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#customer-motivation" class="md-nav__link">
-    Customer Motivation
+  <a href="#target-value" class="md-nav__link">
+    Target Value
   </a>
   
-    <nav class="md-nav" aria-label="Customer Motivation">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision-maker-motivation" class="md-nav__link">
+    Decision Maker Motivation
+  </a>
+  
+    <nav class="md-nav" aria-label="Decision Maker Motivation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1490,6 +1494,20 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#business-questions" class="md-nav__link">
+    Business Questions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#business-value" class="md-nav__link">
+    Business value
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#bootstrap" class="md-nav__link">
     Bootstrap
   </a>
@@ -1497,8 +1515,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#options" class="md-nav__link">
-    Options
+  <a href="#optional-solution" class="md-nav__link">
+    Optional Solution
   </a>
   
 </li>
@@ -1510,78 +1528,9 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#solution-scope" class="md-nav__link">
-    Solution Scope
-  </a>
-  
-    <nav class="md-nav" aria-label="Solution Scope">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#business-value" class="md-nav__link">
-    Business value
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#business-questions" class="md-nav__link">
-    Business Questions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-metrics" class="md-nav__link">
-    Data &amp; Metrics
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#business-events" class="md-nav__link">
-    Business Events
-  </a>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#new-habits" class="md-nav__link">
     New Habits
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#domains" class="md-nav__link">
-    Domains
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#integration-pattern" class="md-nav__link">
-    Integration Pattern
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#decision-timing" class="md-nav__link">
-    Decision Timing
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#delivery-pattern" class="md-nav__link">
-    Delivery Pattern
   </a>
   
 </li>
@@ -1599,15 +1548,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#value-chain" class="md-nav__link">
-    Value Chain
+  <a href="#actions" class="md-nav__link">
+    Actions
   </a>
+  
+    <nav class="md-nav" aria-label="Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#taking-action" class="md-nav__link">
+    Taking Action
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#target-value" class="md-nav__link">
-    Target Value
+  <a href="#value-chain" class="md-nav__link">
+    Value Chain
   </a>
   
 </li>
@@ -1621,8 +1583,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#event-data-sources" class="md-nav__link">
-    Event / Data Sources
+  <a href="#events-actions-entities" class="md-nav__link">
+    Events / Actions / Entities
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-products-reports-dashboards-apis" class="md-nav__link">
+    Data Products (Reports / Dashboards / APIs)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#systems" class="md-nav__link">
+    Systems
   </a>
   
 </li>
@@ -1635,8 +1611,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#custom-reports" class="md-nav__link">
-    Custom Reports
+  <a href="#business-metrics" class="md-nav__link">
+    Business Metrics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#activities" class="md-nav__link">
+    Activities
   </a>
   
 </li>
@@ -1644,13 +1627,6 @@
           <li class="md-nav__item">
   <a href="#technical-assumptions" class="md-nav__link">
     Technical Assumptions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#duration" class="md-nav__link">
-    Duration
   </a>
   
 </li>
@@ -1675,13 +1651,14 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
+                  
 
 
-  <h1>DPC-### { Data Product }</h1>
+  <h1>DPC-### { Data Product Context }</h1>
 
 <!---
 The Data Product Context (DPC) document is used to record the high level features and associated requirements for a data product. This document will be used to help describe the work to be done.
@@ -1689,97 +1666,167 @@ The Data Product Context (DPC) document is used to record the high level feature
 File name: DPC-###_<Data Product>.md
 --->
 
+<!---## DPC-### { Data Product Context }--->
+
 <div class="admonition tldr">
 <p class="admonition-title">TL;DR</p>
-<p>{ Lorem ipsum dolor sit amet }  </p>
+</div>
+<!---### TL;DR --->
 <p><strong>IN ORDER TO</strong> { ... }<br />
 <strong>AS A</strong> { ... }<br />
 <strong>I WANT</strong> { ... }  </p>
-</div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p><strong>Status:</strong> { <strong>CREATED</strong> | IN REVIEW | STARTED | COMPLETED | CANCELED }<br />
-<strong>Business Contact Name:</strong> { name }<br />
-<strong>Business Contact email:</strong> { email }<br />
-<strong>Technical Contact Name:</strong> { name }<br />
-<strong>Technical Contact email:</strong> { email }<br />
-<strong>Other contributors:</strong> { email }<br />
-<strong>Linked PRD / RFC:</strong> <a href="">RFC-###</a>  </p>
 </div>
+<!---### Info--->
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>**Status:** { **CREATED** | IN REVIEW | STARTED | COMPLETED | CANCELED }  
+**Decision Maker Name:** { name }  
+**Decision Maker Email:** { email }  
+**Technical Contact Name:** { name }  
+**Technical Contact Email:** { email }  
+**Other contributors:** { email }  
+**Linked PRD / RFC:** [RFC-###]()
+</code></pre></div></td></tr></table></div>
 <p><strong>LINK:</strong>  { <a href="">URL</a> }  </p>
-<h3 id="customer-motivation">Customer Motivation</h3>
-<h4 id="triggering-event">Triggering Event</h4>
-<p>When { ... }  </p>
-<h4 id="core-problem">Core Problem</h4>
-<p>We [observe, can't, predict] { ... }  </p>
-<h4 id="bootstrap">Bootstrap</h4>
-<p>Today, they { ... }  </p>
-<h4 id="options">Options</h4>
-<p>They [could] also { ... }  </p>
-<h4 id="old-habits">Old Habits</h4>
-<p>They keep doing this because { ... }  </p>
 <hr />
-<h3 id="solution-scope">Solution Scope</h3>
-<h4 id="business-value">Business value</h4>
-<p>We will gain { ... }  </p>
-<h4 id="business-questions">Business Questions</h4>
-<p>By answering { ... }  </p>
-<h4 id="data-metrics">Data &amp; Metrics</h4>
-<p>Through the use of { ... }  </p>
-<h4 id="business-events">Business Events</h4>
-<p>Triggered by these actions { ... }  </p>
-<h4 id="new-habits">New Habits</h4>
-<p>We want them to { ... }  </p>
-<h4 id="domains">Domains</h4>
-<p>The domains are { ... }  </p>
-<h4 id="integration-pattern">Integration Pattern</h4>
-<p>Data will be accessed [integrated] through { ... }  </p>
-<h4 id="decision-timing">Decision Timing</h4>
-<p>Decisions are made every { ... }  </p>
-<h4 id="delivery-pattern">Delivery Pattern</h4>
-<p>The solution will be accessed through { ... }  </p>
-<h4 id="beliefs-assumptions">Beliefs &amp; Assumptions</h4>
-<p>Assuming { ... }  </p>
-<hr />
-<h3 id="value-chain">Value Chain</h3>
-<p>Illustrate the value chain components or process flow using <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a> notation. </p>
-<p><strong>Value Chain</strong>
-<pre class="mermaid"><code>flowchart LR
-A--&gt;B--&gt;C
-D--&gt;C--&gt;Z</code></pre></p>
-<!--- Document the expected financial impact of this project. May be expressed as quantity or quality values.--->
 <h3 id="target-value">Target Value</h3>
+<!--- Document the expected financial impact of this project. May be expressed as quantity or quality values.--->
+
+<!--- At this point in the project life cycle, we are estimating the rough costs associated with this feature for prioritization purposes only. The scoring values are always in the context of other opportunities and should be rescored on each evaluation.  --->
+
+<!---One scoring method is to use a modified Fibonacci sequence for each value (1, 2, 3, 5, 8, 13, 21). Benefits and Urgency are scored highest to lowest (lowest benefit = 1) and Duration is scored lowest to highest (e.g. shortest duration = 1). See Ch. 9: Final Iteration - Innovation and Planning in the book "Building Data Products: Introduction to Data and Analytics Engineering for non-programmers"  --->
+
 <table>
 <thead>
 <tr>
-<th>Units Sold</th>
-<th>Unit Price</th>
-<th>Raw Materials (TVC)</th>
-<th>Operating Expanse</th>
-<th>Financial Throughput</th>
+<th>Benefit Value (B)</th>
+<th>Urgency Value (U)</th>
+<th>Duration Value (D)</th>
+<th>Score (B*U)/D)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>{ # }</td>
-<td>{ $ }</td>
-<td>{ $ }</td>
-<td>{ $ }</td>
-<td>{ $ }</td>
-</tr>
-<tr>
-<td>{ increased }</td>
-<td>{ same }</td>
-<td>{ 3 contract devs. }</td>
-<td>{ increased $1000/mo }</td>
-<td>{ Increased }</td>
+<td>{ # }</td>
+<td>{ # }</td>
+<td>{ # }</td>
 </tr>
 </tbody>
 </table>
+<!---An alternative scoring method: The value assigned to the project is determined by providing each stakeholder an equal amount of money to spend on any of the features being evaluated with this process. The total amount in the pool is determined by multiplying the number of developers times the number of months in the timeframe (e.g. 10 developers * 3 months * $5 = $150 total). If you have five people making the prioritization decisions, then the $150 is divided by five. This provides each person $30 to vote with.
+
+**Resource estimate:** { XX people }  
+**Time estimate:**  { XX time }  
+**Feature cost:** { $5 per FTE per month * time * people }  
+
+### Final business value score: { $## }  
+--->
+
+<!--- Another alternative is to estimate the financial impact to the project. --->
+<!---
+| Units Sold | Unit Price | Raw Materials (TVC) | Operating Expanse | Financial Throughput |
+|---|---|---|---|---|
+| { increased } | { decreased } | { 3 contract devs. } | { increased $1000/mo x 4 monthss} | { Increased } |
+--->
+
+<p>++++</p>
+<h3 id="decision-maker-motivation">Decision Maker Motivation</h3>
+<h4 id="triggering-event">Triggering Event</h4>
+<p>When { ... }  </p>
+<h4 id="core-problem">Core Problem</h4>
+<p>We [observe, can't, predict] { ... }  </p>
+<h4 id="business-questions">Business Questions</h4>
+<p>By answering { ... }  </p>
+<h4 id="business-value">Business value</h4>
+<p>We will gain { ... }  </p>
+<h4 id="bootstrap">Bootstrap</h4>
+<p>Today, we { ... }  </p>
+<h4 id="optional-solution">Optional Solution</h4>
+<p>We [could] also { ... }  </p>
+<h4 id="old-habits">Old Habits</h4>
+<p>We keep doing this because { ... }  </p>
+<h4 id="new-habits">New Habits</h4>
+<p>We want to { ... }  </p>
+<h4 id="beliefs-assumptions">Beliefs &amp; Assumptions</h4>
+<p>Assuming { ... }  </p>
 <hr />
+<h3 id="actions">Actions</h3>
+<p>Without any additional information we will { action taken }  </p>
+<table>
+<thead>
+<tr>
+<th>Alternative Actions</th>
+<th>When would you do something else?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{...}</td>
+<td>{...}</td>
+</tr>
+</tbody>
+</table>
+<h4 id="taking-action">Taking Action</h4>
+<p>These decisions are made every { ... }  </p>
+<p>Who needs to act on this decision?<br />
+- { ... }<br />
+- { ... }  </p>
+<p>What would it take to change your mind?<br />
+{...}  </p>
+<p>What is the impact of changing when you shouldn't (Type 1 mistake)?<br />
+{...}  </p>
+<p>What is the impact of not changing when you should (Type 2 mistake)?<br />
+{...}  </p>
+<p>What information do you need to take action?<br />
+- { ... }<br />
+- { ... }  </p>
+<hr />
+<h3 id="value-chain">Value Chain</h3>
+<p>Illustrate the value chain components or process flow using <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a> notation. </p>
+<p><strong>Value Chain</strong><br />
+<pre class="mermaid"><code>flowchart LR
+A--&gt;B--&gt;C
+D--&gt;C--&gt;Z</code></pre></p>
+<p>++++</p>
 <h3 id="technical-considerations">Technical Considerations</h3>
-<h4 id="event-data-sources">Event / Data Sources</h4>
-<p>The data is produced by [in] { ... }  </p>
+<h4 id="events-actions-entities">Events / Actions / Entities</h4>
+<ul>
+<li>{ Event description }  </li>
+<li>{ Action description }  </li>
+<li>{ Business Entity description }  </li>
+</ul>
+<h4 id="data-products-reports-dashboards-apis">Data Products (Reports / Dashboards / APIs)</h4>
+<ul>
+<li>{ Report description }  </li>
+<li>{ API description }  </li>
+<li>{ Dashboard description }  </li>
+</ul>
+<h4 id="systems">Systems</h4>
+<table>
+<thead>
+<tr>
+<th>Source Systems</th>
+<th>Target Systems</th>
+<th>Interface Pattern</th>
+<th>Contact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{...}</td>
+<td>{...}</td>
+<td>{ ... }</td>
+<td>{ ... }</td>
+</tr>
+</tbody>
+</table>
 <h4 id="data-size">Data Size</h4>
 <table>
 <thead>
@@ -1801,69 +1848,72 @@ D--&gt;C--&gt;Z</code></pre></p>
 </tr>
 </tbody>
 </table>
-<h4 id="custom-reports">Custom Reports</h4>
-<ul>
-<li>{ Report description }  </li>
-<li>{ Report description }  </li>
-<li>{ Report description }  </li>
-</ul>
+<h4 id="business-metrics">Business Metrics</h4>
+<table>
+<thead>
+<tr>
+<th>Metric Name</th>
+<th>Description</th>
+<th>Unit of Measure</th>
+<th>Base Interval</th>
+<th>Threshold Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{ ... }</td>
+<td>{ ... }</td>
+<td>{ ... }</td>
+<td>{ ... }</td>
+<td>{ ... }</td>
+</tr>
+</tbody>
+</table>
+<h4 id="activities">Activities</h4>
+<table>
+<thead>
+<tr>
+<th>Activity Name</th>
+<th>Revenue Impact</th>
+<th>Feature 1 Name</th>
+<th>Feature 2 Name</th>
+<th>Feature 2 Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{ ... }</td>
+<td>{ ... }</td>
+<td>{ ... }</td>
+<td>{ ... }</td>
+<td>{ ... }</td>
+</tr>
+</tbody>
+</table>
 <h4 id="technical-assumptions">Technical Assumptions</h4>
 <ul>
 <li>{ Assumption 1 }  </li>
 <li>{ Assumption 2 }  </li>
 <li>{ Assumption 3 }  </li>
 </ul>
-<h4 id="duration">Duration</h4>
-<p>{ Estimated [actual] end-to-end duration }  </p>
-<hr />
+<p>++++</p>
 <h3 id="references-and-notes">References and notes</h3>
-<p>{ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. }</p>
+<p>{ Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor. }  </p>
 
-              
-            </article>
-            
-          </div>
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="CHANGELOG.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: CHANGE LOG" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              CHANGE LOG
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="LICENSE.html" class="md-footer__link md-footer__link--next" aria-label="Next: LICENSE" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              LICENSE
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1885,10 +1935,11 @@ D--&gt;C--&gt;Z</code></pre></p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs.sticky", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs.sticky", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.51198bba.min.js"></script>
       
         <script src="../../../../js/mkdocs-charts-plugin.js"></script>
       
